@@ -1,0 +1,225 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=-538829363
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[Breakpoints2]
+Count=0
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=16000000
+[struct_types]
+Fmt0=ADRLEN_INF-Adr	4	0
+[array_types]
+Fmt0=u8[100]	3	0
+Fmt1=u8[10]	3	0
+Fmt2=u8[14]	4	0
+Fmt3=u8[15]	4	0
+Fmt4=u8[16]	4	0
+Fmt5=u8[1]	3	0
+Fmt6=u8[200]	4	0
+Fmt7=u8[20]	4	0
+Fmt8=u8[25]	4	0
+Fmt9=u8[2]	4	0
+Fmt10=u8[30]	4	0
+Fmt11=u8[32]	4	0
+Fmt12=u8[33]	4	0
+Fmt13=u8[34]	4	0
+Fmt14=u8[3]	4	0
+Fmt15=u8[40]	4	0
+Fmt16=u8[44]	4	0
+Fmt17=u8[50]	4	0
+Fmt18=u8[512]	4	0
+Fmt19=u8[5]	4	0
+Fmt20=u8[64]	4	0
+Fmt21=u8[6]	4	0
+Fmt22=u8[70]	4	0
+Fmt23=u8[7]	3	0
+Fmt24=u8[84]	4	0
+Fmt25=u8[8]	4	0
+[watch_formats]
+Fmt0={W}1:A1	1	0
+Fmt1={W}1:A2	1	0
+Fmt2={W}1:AddrH	4	0
+Fmt3={W}1:AdrSum	4	0
+Fmt4={W}1:AdrSumTest	4	0
+Fmt5={W}1:AtCmdDrvobj.NetState.Len	3	0
+Fmt6={W}1:AtCmdDrvobj.NetState.Msg.Byte	1	0
+Fmt7={W}1:AtCmdDrvobj.NetState.Position.Latitude_Minute	3	0
+Fmt8={W}1:AtCmdDrvobj.NetState.Position.Latitude_Second	3	0
+Fmt9={W}1:AtCmdDrvobj.NetState.Position.Longitude_Minute	3	0
+Fmt10={W}1:AtCmdDrvobj.NetState.Position.Longitude_Second	3	0
+Fmt11={W}1:AtCmdDrvobj.NetState.SignalToNoiseMax	3	0
+Fmt12={W}1:AtCmdDrvobj.NetState.SouXingConut	3	0
+Fmt13={W}1:AtCmdDrvobj.NetState.TimeBufLen	3	0
+Fmt14={W}1:BDLatitude_Degree	3	0
+Fmt15={W}1:BDLatitude_Minute	3	0
+Fmt16={W}1:BDLatitude_Second	3	0
+Fmt17={W}1:BDLongitude_Degree	3	0
+Fmt18={W}1:BDLongitude_Minute	3	0
+Fmt19={W}1:Buf1[3]	4	0
+Fmt20={W}1:Buf1[4]	4	0
+Fmt21={W}1:Buf2	4	0
+Fmt22={W}1:CharCode	4	0
+Fmt23={W}1:CharCodeH	4	0
+Fmt24={W}1:CharCodeL	4	0
+Fmt25={W}1:CharData	4	0
+Fmt26={W}1:CharData[0]	4	0
+Fmt27={W}1:CharData[10]	4	0
+Fmt28={W}1:CharData[11]	4	0
+Fmt29={W}1:CharData[12]	4	0
+Fmt30={W}1:CharData[13]	4	0
+Fmt31={W}1:CharData[1]	4	0
+Fmt32={W}1:CharData[2]	4	0
+Fmt33={W}1:CharData[3]	4	0
+Fmt34={W}1:CharData[4]	4	0
+Fmt35={W}1:CharData[5]	4	0
+Fmt36={W}1:CharData[6]	4	0
+Fmt37={W}1:CharData[7]	4	0
+Fmt38={W}1:CharData[8]	4	0
+Fmt39={W}1:CharData[9]	4	0
+Fmt40={W}1:DataAddr	4	0
+Fmt41={W}1:ForbiddenSendPttCount	3	0
+Fmt42={W}1:GetMemberCount	3	0
+Fmt43={W}1:GpsFunDrvObj.InfoRecord.Position.ulLatitude	4	0
+Fmt44={W}1:GpsFunDrvObj.InfoRecord.Position.ulLongitude	4	0
+Fmt45={W}1:GpsFunDrvObj.PositionSystem.GbSys.State.ulAckStep	4	0
+Fmt46={W}1:GroupCallingNum	3	0
+Fmt47={W}1:HDRCSQValue	3	0
+Fmt48={W}1:KeyPersonalCallingCount	3	0
+Fmt49={W}1:KeylockTimeCount	3	0
+Fmt50={W}1:LandingTimeCount	4	0
+Fmt51={W}1:Len	3	0
+Fmt52={W}1:Len1	4	0
+Fmt53={W}1:MenuMode_Flag	4	0
+Fmt54={W}1:NumCount	3	0
+Fmt55={W}1:POC_AtEnterPersonalCalling_Flag	4	0
+Fmt56={W}1:POC_AtQuitPersonalCalling_Flag	4	0
+Fmt57={W}1:POC_EnterGroupCalling_Flag	4	0
+Fmt58={W}1:POC_EnterPersonalCalling_Flag	4	0
+Fmt59={W}1:POC_QuitGroupCalling_Flag	4	0
+Fmt60={W}1:POC_QuitPersonalCalling_Flag	4	0
+Fmt61={W}1:POC_ReceivedVoiceCount	3	0
+Fmt62={W}1:PersonalCallingNum	3	0
+Fmt63={W}1:PocCmdDrvobj.WorkState.UseState.Group[1].NameLen	3	0
+Fmt64={W}1:PocCmdDrvobj.WorkState.UseState.Group[2].NameLen	3	0
+Fmt65={W}1:PocCmdDrvobj.WorkState.UseState.Group[n].NameLen	3	0
+Fmt66={W}1:PocCmdDrvobj.WorkState.UseState.MainWorkGroup.GroupNum	3	0
+Fmt67={W}1:PocCmdDrvobj.WorkState.UseState.MainWorkGroup.NameLen	4	0
+Fmt68={W}1:PocCmdDrvobj.WorkState.UseState.PttUserName.NameLen	3	0
+Fmt69={W}1:PocCmdDrvobj.WorkState.UseState.PttUserName.UserNum	3	0
+Fmt70={W}1:PocCmdDrvobj.WorkState.UseState.SpeakerRightnow.NameLen	3	0
+Fmt71={W}1:PocCmdDrvobj.WorkState.UseState.UserName[0].NameLen	3	0
+Fmt72={W}1:PocCmdDrvobj.WorkState.UseState.WorkGroup.NameLen	3	0
+Fmt73={W}1:PresentGroupNum	3	0
+Fmt74={W}1:ReportTimerSET	3	0
+Fmt75={W}1:TcpIpLen	3	0
+Fmt76={W}1:TcpPortLen	3	0
+Fmt77={W}1:TcpPortLen1	3	0
+Fmt78={W}1:TestLen	3	0
+Fmt79={W}1:TheMenuLayer_Flag	4	0
+Fmt80={W}1:UserLen	3	0
+Fmt81={W}1:UserLen2	3	0
+Fmt82={W}1:adr	4	0
+Fmt83={W}1:adr.Adr	4	0
+Fmt84={W}1:adr.Len	3	0
+Fmt85={W}1:cBuf	4	0
+Fmt86={W}1:cBuf[0]	4	0
+Fmt87={W}1:cBuf[10]	4	0
+Fmt88={W}1:cBuf[15]	4	0
+Fmt89={W}1:cBuf[16]	4	0
+Fmt90={W}1:cBuf[17]	4	0
+Fmt91={W}1:cBuf[18]	4	0
+Fmt92={W}1:cBuf[5]	4	0
+Fmt93={W}1:cHead	3	0
+Fmt94={W}1:group_num_count	3	0
+Fmt95={W}1:group_num_temp_count	3	0
+Fmt96={W}1:high	4	0
+Fmt97={W}1:i	3	0
+Fmt98={W}1:iAdr	4	0
+Fmt99={W}1:iCode	4	0
+Fmt100={W}1:iLen	3	0
+Fmt101={W}1:low	4	0
+Fmt102={W}1:mid	3	0
+Fmt103={W}1:midVal	4	0
+Fmt104={W}1:pBuf[8]	4	0
+Fmt105={W}1:pBuf[9]	4	0
+Fmt106={W}1:sum	4	0
+Fmt107={W}1:test_count	3	0
+Fmt108={W}1:ucId	3	0
+Fmt109={W}1:ucIndex0	3	0
+Fmt110={W}1:user_list_ucId	3	0
+Fmt111={W}1:value	4	0
+Fmt112={W}1:xCol	3	0
+Fmt113={W}1:yPage	3	0
+[DataSample]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\SRC\Syetem\ApiGpsCmd.c}.1099.3" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_DATA" "file_flash_write" 0 0 0 3 0 "" 0 ""
+Bp2=_ "STD_DATA" "file_flash_write" 0 0 0 3 0 "" 0 ""
+Bp3=_ "STD_DATA" "file_flash_write" 0 0 0 3 0 "" 0 ""
+Bp4=_ "STD_DATA" "file_flash_write" 0 0 0 3 0 "" 0 ""
+Count=5
+[Aliases]
+A0=_ "C:\Users\lei\Desktop\IAR\GT20L16P1Y.c" ""
+Count=1
+SuppressDialog=1
+[DebuggerSettings]
+DisableInterruptsWhenStepping=0

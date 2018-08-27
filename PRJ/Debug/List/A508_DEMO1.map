@@ -1,0 +1,1822 @@
+###############################################################################
+#
+# IAR ELF Linker V2.20.1.176 for STM8                     27/Aug/2018  13:34:38
+# Copyright 2010-2015 IAR Systems AB.
+#
+#    Output file  =  E:\1-source\A508_TCP版本\PRJ\Debug\Exe\A508_DEMO1.out
+#    Map file     =  E:\1-source\A508_TCP版本\PRJ\Debug\List\A508_DEMO1.map
+#    Command line =  
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ADC.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiAtCmd.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiBeidou.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiDisplay.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiGpsCmd.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiKeyboard.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiLED.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiMenu.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\ApiPocCmd.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\Beep.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\CommonLib.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\Config.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\Delay.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\DrvGD83.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\DrvGT20L16S1Y.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\DrvHTG12832.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\DrvKeyboard.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\Flash_eeprom.o
+#        E:\1-source\A508_TCP版本\SRC\Syetem\GT20L16_STM8_DOUBLE_MEDIUM_IAR.a
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\GT20L16P1Y_D.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\KeyCmd.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\main.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\McuConfig.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_adc2.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_awu.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_beep.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_clk.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_exti.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_flash.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_gpio.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_i2c.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_it.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_itc.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_iwdg.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_rst.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_spi.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_tim1.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_tim2.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_tim3.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_tim4.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_uart1.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_uart3.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\stm8s_wwdg.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\sysclock.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\System.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\Task.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\Tone.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\uart3.o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Obj\Voice.o --redirect
+#        _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        E:\1-source\A508_TCP版本\PRJ\Debug\Exe\A508_DEMO1.out --map
+#        E:\1-source\A508_TCP版本\PRJ\Debug\List\A508_DEMO1.map --config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.3\stm8\config\lnkstm8s007c8.icf" --config_def _CSTACK_SIZE=0x100
+#        --config_def _HEAP_SIZE=0x00 --entry __iar_program_start --debug_lib
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__SystemLibrary            = DLib
+__code_model               = medium_or_large
+__core                     = stm8
+__data_model               = medium
+__dlib_file_descriptor     = 0
+__dlib_full_locale_support = 0
+__rt_version               = 4
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at start of [0x000000-0x0000ff] { rw section .vregs };
+"A2":  place at end of [0x000000-0x0017ff] { block CSTACK };
+"P2":  place in [from 0x000000 to 0x0017ff] {
+          block HEAP, rw section __DLIB_PERTHREAD, rw section .far.bss,
+          rw section .far.data, rw section .far.noinit,
+          rw section .far_func.textrw, rw section .huge.bss,
+          rw section .huge.data, rw section .huge.noinit,
+          rw section .huge_func.textrw, rw section .iar.dynexit,
+          rw section .near.bss, rw section .near.data, rw section .near.noinit,
+          rw section .near_func.textrw };
+"A3":  place at start of [0x008000-0x00ffff] { block INTVEC };
+"P3":  place in [from 0x008000 to 0x00ffff] {
+          ro section __DLIB_PERTHREAD_init, ro section .far.data_init,
+          ro section .far_func.textrw_init, ro section .huge.data_init,
+          ro section .huge_func.textrw_init, ro section .iar.init_table,
+          ro section .init_array, ro section .near.data_init,
+          ro section .near.rodata, ro section .near_func.text,
+          ro section .near_func.textrw_init, ro section .tiny.data_init,
+          ro section .tiny.rodata_init };
+"P4":  place in [from 0x008000 to 0x00ffff repeat 2] {
+          ro section .far.rodata, ro section .far_func.text };
+
+  Section            Kind      Address    Size  Object
+  -------            ----      -------    ----  ------
+"A1":                                     0x10
+  .vregs             uninit   0x000000    0x10  vregs.o [5]
+                            - 0x000010    0x10
+
+"P2", part 1 of 4:                       0x99f
+  .near.bss          zero     0x000010   0x99f  ApiPocCmd.o [1]
+                            - 0x0009af   0x99f
+
+"P2", part 2 of 4:                       0x52f
+  .near.bss          zero     0x0009af   0x52f  DrvGD83.o [1]
+                            - 0x000ede   0x52f
+
+"P2", part 3 of 4:                       0x77a
+  .near.bss          zero     0x000ede   0x200  ApiDisplay.o [1]
+  .near.bss          zero     0x0010de   0x1c3  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0012a1    0x92  ApiAtCmd.o [1]
+  .near.bss          zero     0x001333    0x50  ApiPocCmd.o [1]
+  .near.bss          zero     0x001383    0x4b  ApiBeidou.o [1]
+  .near.bss          zero     0x0013ce    0x44  uart3.o [1]
+  .near.bss          zero     0x001412    0x40  ApiDisplay.o [1]
+  .near.bss          zero     0x001452    0x40  ApiPocCmd.o [1]
+  .near.bss          zero     0x001492    0x40  ApiPocCmd.o [1]
+  .near.bss          zero     0x0014d2    0x2d  ApiPocCmd.o [1]
+  .near.bss          zero     0x0014ff    0x19  ApiPocCmd.o [1]
+  .near.bss          zero     0x001518    0x19  ApiPocCmd.o [1]
+  .near.bss          zero     0x001531    0x16  ApiPocCmd.o [1]
+  .near.bss          zero     0x001547    0x14  System.o [1]
+  .near.bss          zero     0x00155b    0x12  Beep.o [1]
+  .near.bss          zero     0x00156d    0x12  Tone.o [1]
+  .near.bss          zero     0x00157f     0xf  ApiGpsCmd.o [1]
+  .near.bss          zero     0x00158e     0xb  ApiPocCmd.o [1]
+  .near.bss          zero     0x001599     0xb  Delay.o [1]
+  .near.bss          zero     0x0015a4     0x6  ApiBeidou.o [1]
+  .near.bss          zero     0x0015aa     0x6  Voice.o [1]
+  .near.bss          zero     0x0015b0     0x5  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015b5     0x4  uart3.o [1]
+  .near.bss          zero     0x0015b9     0x2  ApiDisplay.o [1]
+  .near.bss          zero     0x0015bb     0x2  Delay.o [1]
+  .near.bss          zero     0x0015bd     0x2  Delay.o [1]
+  .near.bss          zero     0x0015bf     0x2  Delay.o [1]
+  .near.bss          zero     0x0015c1     0x2  Delay.o [1]
+  .near.bss          zero     0x0015c3     0x2  DrvHTG12832.o [1]
+  .near.bss          zero     0x0015c5     0x2  Tone.o [1]
+  .near.bss          zero     0x0015c7     0x1  ADC.o [1]
+  .near.bss          zero     0x0015c8     0x1  ADC.o [1]
+  .near.bss          zero     0x0015c9     0x1  ADC.o [1]
+  .near.bss          zero     0x0015ca     0x1  ADC.o [1]
+  .near.bss          zero     0x0015cb     0x1  ADC.o [1]
+  .near.bss          zero     0x0015cc     0x1  ADC.o [1]
+  .near.bss          zero     0x0015cd     0x1  ADC.o [1]
+  .near.bss          zero     0x0015ce     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015cf     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d0     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d1     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d2     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d3     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d4     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d5     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d6     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d7     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d8     0x1  ApiAtCmd.o [1]
+  .near.bss          zero     0x0015d9     0x1  ApiBeidou.o [1]
+  .near.bss          zero     0x0015da     0x1  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015db     0x1  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015dc     0x1  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015dd     0x1  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015de     0x1  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015df     0x1  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015e0     0x1  ApiGpsCmd.o [1]
+  .near.bss          zero     0x0015e1     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e2     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e3     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e4     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e5     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e6     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e7     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e8     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015e9     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015ea     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015eb     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015ec     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015ed     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015ee     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015ef     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f0     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f1     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f2     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f3     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f4     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f5     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f6     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f7     0x1  ApiKeyboard.o [1]
+  .near.bss          zero     0x0015f8     0x1  ApiLED.o [1]
+  .near.bss          zero     0x0015f9     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x0015fa     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x0015fb     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x0015fc     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x0015fd     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x0015fe     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x0015ff     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x001600     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x001601     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x001602     0x1  ApiMenu.o [1]
+  .near.bss          zero     0x001603     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001604     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001605     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001606     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001607     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001608     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001609     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00160a     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00160b     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00160c     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00160d     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00160e     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00160f     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001610     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001611     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001612     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001613     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001614     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001615     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001616     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001617     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001618     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x001619     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00161a     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00161b     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00161c     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00161d     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00161e     0x1  ApiPocCmd.o [1]
+  .near.bss          zero     0x00161f     0x1  Delay.o [1]
+  .near.bss          zero     0x001620     0x1  Delay.o [1]
+  .near.bss          zero     0x001621     0x1  Delay.o [1]
+  .near.bss          zero     0x001622     0x1  Delay.o [1]
+  .near.bss          zero     0x001623     0x1  Delay.o [1]
+  .near.bss          zero     0x001624     0x1  Delay.o [1]
+  .near.bss          zero     0x001625     0x1  Delay.o [1]
+  .near.bss          zero     0x001626     0x1  Delay.o [1]
+  .near.bss          zero     0x001627     0x1  Delay.o [1]
+  .near.bss          zero     0x001628     0x1  Delay.o [1]
+  .near.bss          zero     0x001629     0x1  Delay.o [1]
+  .near.bss          zero     0x00162a     0x1  Delay.o [1]
+  .near.bss          zero     0x00162b     0x1  Delay.o [1]
+  .near.bss          zero     0x00162c     0x1  Delay.o [1]
+  .near.bss          zero     0x00162d     0x1  Delay.o [1]
+  .near.bss          zero     0x00162e     0x1  Delay.o [1]
+  .near.bss          zero     0x00162f     0x1  Delay.o [1]
+  .near.bss          zero     0x001630     0x1  Delay.o [1]
+  .near.bss          zero     0x001631     0x1  Delay.o [1]
+  .near.bss          zero     0x001632     0x1  Delay.o [1]
+  .near.bss          zero     0x001633     0x1  Delay.o [1]
+  .near.bss          zero     0x001634     0x1  Delay.o [1]
+  .near.bss          zero     0x001635     0x1  Delay.o [1]
+  .near.bss          zero     0x001636     0x1  Delay.o [1]
+  .near.bss          zero     0x001637     0x1  Delay.o [1]
+  .near.bss          zero     0x001638     0x1  Delay.o [1]
+  .near.bss          zero     0x001639     0x1  Delay.o [1]
+  .near.bss          zero     0x00163a     0x1  Delay.o [1]
+  .near.bss          zero     0x00163b     0x1  Delay.o [1]
+  .near.bss          zero     0x00163c     0x1  Delay.o [1]
+  .near.bss          zero     0x00163d     0x1  Delay.o [1]
+  .near.bss          zero     0x00163e     0x1  Delay.o [1]
+  .near.bss          zero     0x00163f     0x1  Delay.o [1]
+  .near.bss          zero     0x001640     0x1  DrvGD83.o [1]
+  .near.bss          zero     0x001641     0x1  stm8s_it.o [1]
+  .near.bss          zero     0x001642     0x1  Task.o [1]
+  .near.bss          zero     0x001643     0x1  Task.o [1]
+  .near.bss          zero     0x001644     0x1  Task.o [1]
+  .near.bss          zero     0x001645     0x1  Task.o [1]
+  .near.bss          zero     0x001646     0x1  Task.o [1]
+  .near.bss          zero     0x001647     0x1  Task.o [1]
+  .near.bss          zero     0x001648     0x1  Task.o [1]
+  .near.bss          zero     0x001649     0x1  Task.o [1]
+  .near.bss          zero     0x00164a     0x1  Task.o [1]
+  .near.bss          zero     0x00164b     0x1  Task.o [1]
+  .near.bss          zero     0x00164c     0x1  Task.o [1]
+  .near.bss          zero     0x00164d     0x1  Task.o [1]
+  .near.bss          zero     0x00164e     0x1  Task.o [1]
+  .near.bss          zero     0x00164f     0x1  Task.o [1]
+  .near.bss          zero     0x001650     0x1  Task.o [1]
+  .near.bss          zero     0x001651     0x1  Task.o [1]
+  .near.bss          zero     0x001652     0x1  Task.o [1]
+  .near.bss          zero     0x001653     0x1  Task.o [1]
+  .near.bss          zero     0x001654     0x1  Task.o [1]
+  .near.bss          zero     0x001655     0x1  Task.o [1]
+  .near.bss          zero     0x001656     0x1  Tone.o [1]
+  .near.bss          zero     0x001657     0x1  uart3.o [1]
+                            - 0x001658   0x77a
+
+"P2", part 4 of 4:                        0x66
+  P2-1                        0x001658    0x66  <Init block>
+    .near.data       inited   0x001658     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00165a     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00165c     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00165e     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001660     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001662     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001664     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001666     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001668     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00166a     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00166c     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00166e     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001670     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001672     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001674     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001676     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001678     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00167a     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00167c     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x00167e     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001680     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001682     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001684     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001686     0x2  ApiAtCmd.o [1]
+    .near.data       inited   0x001688     0x1  ApiKeyboard.o [1]
+    .near.data       inited   0x001689     0x2  ApiKeyboard.o [1]
+    .near.data       inited   0x00168b     0x2  ApiKeyboard.o [1]
+    .near.data       inited   0x00168d     0x2  ApiKeyboard.o [1]
+    .near.data       inited   0x00168f     0x1  ApiKeyboard.o [1]
+    .near.data       inited   0x001690     0x1  ApiKeyboard.o [1]
+    .near.data       inited   0x001691     0x1  ApiKeyboard.o [1]
+    .near.data       inited   0x001692     0x1  ApiKeyboard.o [1]
+    .near.data       inited   0x001693     0x2  ApiMenu.o [1]
+    .near.data       inited   0x001695     0x2  ApiMenu.o [1]
+    .near.data       inited   0x001697     0x1  ApiMenu.o [1]
+    .near.data       inited   0x001698     0x2  ApiPocCmd.o [1]
+    .near.data       inited   0x00169a     0x2  ApiPocCmd.o [1]
+    .near.data       inited   0x00169c     0x2  Delay.o [1]
+    .near.data       inited   0x00169e     0x2  DrvGD83.o [1]
+    .near.data       inited   0x0016a0     0x2  DrvGD83.o [1]
+    .near.data       inited   0x0016a2     0x2  DrvGD83.o [1]
+    .near.data       inited   0x0016a4     0x2  DrvGD83.o [1]
+    .near.data       inited   0x0016a6     0x1  Task.o [1]
+    .near.data       inited   0x0016a7     0x1  Task.o [1]
+    .near.data       inited   0x0016a8     0x2  Task.o [1]
+    .near.data       inited   0x0016aa     0x2  Task.o [1]
+    .near.data       inited   0x0016ac     0x2  Task.o [1]
+    .near.data       inited   0x0016ae     0x2  Task.o [1]
+    .near.data       inited   0x0016b0     0x2  Task.o [1]
+    .near.data       inited   0x0016b2     0x2  Task.o [1]
+    .near.data       inited   0x0016b4     0x2  Task.o [1]
+    .near.data       inited   0x0016b6     0x2  Task.o [1]
+    .near.data       inited   0x0016b8     0x2  Task.o [1]
+    .near.data       inited   0x0016ba     0x2  Task.o [1]
+    .near.data       inited   0x0016bc     0x2  Task.o [1]
+                            - 0x0016be    0x66
+
+"A2":                                    0x100
+  CSTACK                      0x001700   0x100  <Block>
+    CSTACK           uninit   0x001700   0x100  <Block tail>
+                            - 0x001800   0x100
+
+"A3":                                     0x80
+  INTVEC                      0x008000    0x80  <Block>
+    .intvec          const    0x008000    0x80  interrupt.o [5]
+                            - 0x008080    0x80
+
+"P3":                                   0x2cc2
+  .near.rodata       const    0x008080  0x1b00  GT20L16P1Y_D.o [1]
+  .near.rodata       const    0x009b80   0x400  ApiDisplay.o [1]
+  .near.rodata       const    0x009f80   0x1b0  GT20L16P1Y_D.o [1]
+  .near.rodata       const    0x00a130   0x1b0  GT20L16P1Y_D.o [1]
+  Initializer bytes  const    0x00a2e0    0x66  <for P2-1>
+  .near_func.text    const    0x00a346    0x40  ApiDisplay.o [1]
+  .near.rodata       const    0x00a386    0x3e  GT20L16P1Y.o [3]
+  .near.rodata       const    0x00a3c4    0x3b  Task.o [1]
+  .near.rodata       const    0x00a3ff    0x31  Task.o [1]
+  .near.rodata       const    0x00a430    0x2d  Task.o [1]
+  .near.rodata       const    0x00a45d    0x2a  Task.o [1]
+  .near.rodata       const    0x00a487    0x25  ApiMenu.o [1]
+  .near.rodata       const    0x00a4ac    0x25  ApiMenu.o [1]
+  .near.rodata       const    0x00a4d1    0x25  Delay.o [1]
+  .iar.init_table    const    0x00a4f6    0x1c  - Linker created -
+  .near.rodata       const    0x00a512    0x20  KeyCmd.o [1]
+  .near.rodata       const    0x00a532    0x1d  ADC.o [1]
+  .near.rodata       const    0x00a54f    0x1d  ADC.o [1]
+  .near.rodata       const    0x00a56c    0x1d  ADC.o [1]
+  .near.rodata       const    0x00a589    0x1d  ADC.o [1]
+  .near.rodata       const    0x00a5a6    0x19  ADC.o [1]
+  .near.rodata       const    0x00a5bf    0x18  Task.o [1]
+  .near.rodata       const    0x00a5d7    0x15  ADC.o [1]
+  .near.rodata       const    0x00a5ec    0x15  ApiPocCmd.o [1]
+  .near.rodata       const    0x00a601    0x15  Task.o [1]
+  .near.rodata       const    0x00a616    0x13  Task.o [1]
+  .near.rodata       const    0x00a629    0x13  Task.o [1]
+  .near.rodata       const    0x00a63c    0x12  ApiAtCmd.o [1]
+  .near.rodata       const    0x00a64e    0x12  Task.o [1]
+  .near.rodata       const    0x00a660    0x11  ApiAtCmd.o [1]
+  .near.rodata       const    0x00a671    0x11  ApiAtCmd.o [1]
+  .near.rodata       const    0x00a682    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a693    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a6a4    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a6b5    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a6c6    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a6d7    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a6e8    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a6f9    0x11  ApiKeyboard.o [1]
+  .near.rodata       const    0x00a70a    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a71b    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a72c    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a73d    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a74e    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a75f    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a770    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a781    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a792    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a7a3    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a7b4    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a7c5    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a7d6    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a7e7    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a7f8    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a809    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a81a    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a82b    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a83c    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a84d    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a85e    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a86f    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a880    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a891    0x11  ApiMenu.o [1]
+  .near.rodata       const    0x00a8a2    0x11  ApiPocCmd.o [1]
+  .near.rodata       const    0x00a8b3    0x11  CommonLib.o [1]
+  .near.rodata       const    0x00a8c4    0x11  Delay.o [1]
+  .near.rodata       const    0x00a8d5    0x11  Delay.o [1]
+  .near.rodata       const    0x00a8e6    0x11  KeyCmd.o [1]
+  .near.rodata       const    0x00a8f7    0x11  KeyCmd.o [1]
+  .near.rodata       const    0x00a908    0x11  System.o [1]
+  .near.rodata       const    0x00a919    0x11  Task.o [1]
+  .near.rodata       const    0x00a92a    0x11  Task.o [1]
+  .near.rodata       const    0x00a93b    0x11  Task.o [1]
+  .near.rodata       const    0x00a94c    0x11  Task.o [1]
+  .near.rodata       const    0x00a95d    0x11  Task.o [1]
+  .near.rodata       const    0x00a96e    0x11  Task.o [1]
+  .near.rodata       const    0x00a97f    0x11  Task.o [1]
+  .near.rodata       const    0x00a990    0x11  Task.o [1]
+  .near.rodata       const    0x00a9a1    0x11  Task.o [1]
+  .near.rodata       const    0x00a9b2    0x11  Task.o [1]
+  .near.rodata       const    0x00a9c3    0x11  Task.o [1]
+  .near.rodata       const    0x00a9d4    0x10  ApiAtCmd.o [1]
+  .near.rodata       const    0x00a9e4    0x10  ApiAtCmd.o [1]
+  .near.rodata       const    0x00a9f4    0x10  ApiDisplay.o [1]
+  .near.rodata       const    0x00aa04    0x10  ApiDisplay.o [1]
+  .near.rodata       const    0x00aa14    0x10  ApiMenu.o [1]
+  .near.rodata       const    0x00aa24    0x10  ApiMenu.o [1]
+  .near.rodata       const    0x00aa34    0x10  ApiMenu.o [1]
+  .near.rodata       const    0x00aa44    0x10  ApiMenu.o [1]
+  .near.rodata       const    0x00aa54    0x10  uart3.o [1]
+  .near.rodata       const    0x00aa64     0xf  ApiAtCmd.o [1]
+  .near.rodata       const    0x00aa73     0xf  ApiKeyboard.o [1]
+  .near.rodata       const    0x00aa82     0xf  ApiPocCmd.o [1]
+  .near.rodata       const    0x00aa91     0xf  Task.o [1]
+  .near.rodata       const    0x00aaa0     0xe  ApiAtCmd.o [1]
+  .near.rodata       const    0x00aaae     0xe  ApiAtCmd.o [1]
+  .near.rodata       const    0x00aabc     0xe  ApiAtCmd.o [1]
+  .near.rodata       const    0x00aaca     0xe  ApiMenu.o [1]
+  .near.rodata       const    0x00aad8     0xe  ApiMenu.o [1]
+  .near.rodata       const    0x00aae6     0xe  Task.o [1]
+  .near.rodata       const    0x00aaf4     0xd  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ab01     0xd  ApiKeyboard.o [1]
+  .near.rodata       const    0x00ab0e     0xd  ApiKeyboard.o [1]
+  .near.rodata       const    0x00ab1b     0xd  ApiPocCmd.o [1]
+  .near.rodata       const    0x00ab28     0xd  ApiPocCmd.o [1]
+  .near.rodata       const    0x00ab35     0xd  ApiPocCmd.o [1]
+  .near.rodata       const    0x00ab42     0xd  Delay.o [1]
+  .near.rodata       const    0x00ab4f     0xd  Delay.o [1]
+  .near.rodata       const    0x00ab5c     0xd  Task.o [1]
+  .near.rodata       const    0x00ab69     0xd  Task.o [1]
+  .near.rodata       const    0x00ab76     0xc  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ab82     0xc  Delay.o [1]
+  .near.rodata       const    0x00ab8e     0xb  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ab99     0xb  ApiAtCmd.o [1]
+  .near.rodata       const    0x00aba4     0xb  ApiAtCmd.o [1]
+  .near.rodata       const    0x00abaf     0xb  ApiAtCmd.o [1]
+  .near.rodata       const    0x00abba     0xb  ApiKeyboard.o [1]
+  .near.rodata       const    0x00abc5     0xb  Delay.o [1]
+  .near.rodata       const    0x00abd0     0xb  Task.o [1]
+  .near.rodata       const    0x00abdb     0xa  ApiAtCmd.o [1]
+  .near.rodata       const    0x00abe5     0xa  ApiAtCmd.o [1]
+  .near.rodata       const    0x00abef     0xa  ApiAtCmd.o [1]
+  .near.rodata       const    0x00abf9     0xa  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac03     0xa  Delay.o [1]
+  .near.rodata       const    0x00ac0d     0xa  Task.o [1]
+  .near.rodata       const    0x00ac17     0x9  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac20     0x9  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac29     0x9  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac32     0x9  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac3b     0x9  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac44     0x9  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac4d     0x9  ApiKeyboard.o [1]
+  .near.rodata       const    0x00ac56     0x9  ApiKeyboard.o [1]
+  .near.rodata       const    0x00ac5f     0x9  DrvGD83.o [1]
+  .near.rodata       const    0x00ac68     0x9  Task.o [1]
+  .near.rodata       const    0x00ac71     0x8  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac79     0x8  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ac81     0x8  ApiDisplay.o [1]
+  .near.rodata       const    0x00ac89     0x8  ApiPocCmd.o [1]
+  .near.rodata       const    0x00ac91     0x8  Task.o [1]
+  .near.rodata       const    0x00ac99     0x7  ApiAtCmd.o [1]
+  .near.rodata       const    0x00aca0     0x7  ApiAtCmd.o [1]
+  .near.rodata       const    0x00aca7     0x7  ApiPocCmd.o [1]
+  .near.rodata       const    0x00acae     0x7  ApiPocCmd.o [1]
+  .near.rodata       const    0x00acb5     0x7  DrvGD83.o [1]
+  .near.rodata       const    0x00acbc     0x7  Task.o [1]
+  .near.rodata       const    0x00acc3     0x7  Task.o [1]
+  .near.rodata       const    0x00acca     0x6  Delay.o [1]
+  .near.rodata       const    0x00acd0     0x6  DrvGD83.o [1]
+  .near.rodata       const    0x00acd6     0x6  System.o [1]
+  .near.rodata       const    0x00acdc     0x5  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ace1     0x5  ApiPocCmd.o [1]
+  .near.rodata       const    0x00ace6     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00acea     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00acee     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00acf2     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00acf6     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00acfa     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00acfe     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad02     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad06     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad0a     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad0e     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad12     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad16     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad1a     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad1e     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad22     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad26     0x4  ApiMenu.o [1]
+  .near.rodata       const    0x00ad2a     0x4  stm8s_clk.o [1]
+  .near.rodata       const    0x00ad2e     0x4  uart3.o [1]
+  .near.rodata       const    0x00ad32     0x4  uart3.o [1]
+  .near.rodata       const    0x00ad36     0x3  ApiAtCmd.o [1]
+  .near.rodata       const    0x00ad39     0x3  DrvGD83.o [1]
+  .near.rodata       const    0x00ad3c     0x3  uart3.o [1]
+  .near.rodata       const    0x00ad3f     0x3  uart3.o [1]
+                            - 0x00ad42  0x2cc2
+
+"P4", part 1 of 2:                      0x5123
+  .far_func.text     ro code  0x00ad42   0xfba  ApiKeyboard.o [1]
+  .far_func.text     ro code  0x00bcfc   0x99c  Delay.o [1]
+  .far_func.text     ro code  0x00c698   0x951  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00cfe9   0x823  DrvGD83.o [1]
+  .far_func.text     ro code  0x00d80c   0x6d6  Task.o [1]
+  .far_func.text     ro code  0x00dee2   0x4f6  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x00e3d8   0x3d5  ApiMenu.o [1]
+  .far_func.text     ro code  0x00e7ad   0x341  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x00eaee   0x30f  Beep.o [1]
+  .far_func.text     ro code  0x00edfd   0x2d6  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00f0d3    0x40  Task.o [1]
+  .far_func.text     ro code  0x00f113    0x3e  Flash_eeprom.o [1]
+  .far_func.text     ro code  0x00f151    0x3d  DrvGD83.o [1]
+  .far_func.text     ro code  0x00f18e    0x3b  McuConfig.o [1]
+  .far_func.text     ro code  0x00f1c9    0x39  uart3.o [1]
+  .far_func.text     ro code  0x00f202    0x38  Beep.o [1]
+  .far_func.text     ro code  0x00f23a    0x38  DrvGT20L16S1Y.o [1]
+  .far_func.text     ro code  0x00f272    0x36  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00f2a8    0x36  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00f2de    0x36  sysclock.o [1]
+  .far_func.text     ro code  0x00f314    0x36  memcmp.o [5]
+  .far_func.text     ro code  0x00f34a    0x34  McuConfig.o [1]
+  .far_func.text     ro code  0x00f37e    0x34  char.o [5]
+  .far_func.text     ro code  0x00f3b2    0x32  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x00f3e4    0x30  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x00f414    0x2f  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f443    0x2f  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f472    0x2f  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x00f4a1    0x2e  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f4cf    0x2e  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f4fd    0x2e  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f52b    0x2e  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f559    0x2e  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f587    0x2d  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00f5b4    0x2d  stm8s_it.o [1]
+  .far_func.text     ro code  0x00f5e1    0x2d  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x00f60e    0x2c  DrvGD83.o [1]
+  .far_func.text     ro code  0x00f63a    0x2b  sysclock.o [1]
+  .far_func.text     ro code  0x00f665    0x2a  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00f68f    0x29  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00f6b8    0x29  Delay.o [1]
+  .far_func.text     ro code  0x00f6e1    0x29  McuConfig.o [1]
+  .far_func.text     ro code  0x00f70a    0x28  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00f732    0x28  init_small.o [5]
+  .far_func.text     ro code  0x00f75a    0x27  ADC.o [1]
+  .far_func.text     ro code  0x00f781    0x27  main.o [1]
+  .far_func.text     ro code  0x00f7a8    0x27  McuConfig.o [1]
+  .far_func.text     ro code  0x00f7cf    0x26  GT20L16P1Y_D.o [1]
+  .far_func.text     ro code  0x00f7f5    0x26  Tone.o [1]
+  .far_func.text     ro code  0x00f81b    0x26  memcpy.o [5]
+  .far_func.text     ro code  0x00f841    0x25  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00f866    0x25  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x00f88b    0x25  move.o [5]
+  .far_func.text     ro code  0x00f8b0    0x24  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00f8d4    0x22  ADC.o [1]
+  .far_func.text     ro code  0x00f8f6    0x21  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x00f917    0x21  Delay.o [1]
+  .far_func.text     ro code  0x00f938    0x21  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x00f959    0x21  stm8s_it.o [1]
+  .far_func.text     ro code  0x00f97a    0x20  KeyCmd.o [1]
+  .far_func.text     ro code  0x00f99a    0x20  Task.o [1]
+  .far_func.text     ro code  0x00f9ba    0x1f  sysclock.o [1]
+  .far_func.text     ro code  0x00f9d9    0x1e  init.o [5]
+  .far_func.text     ro code  0x00f9f7    0x1e  init_small.o [5]
+  .far_func.text     ro code  0x00fa15    0x1c  Beep.o [1]
+  .far_func.text     ro code  0x00fa31    0x1c  Delay.o [1]
+  .far_func.text     ro code  0x00fa4d    0x1b  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fa68    0x19  McuConfig.o [1]
+  .far_func.text     ro code  0x00fa81    0x19  McuConfig.o [1]
+  .far_func.text     ro code  0x00fa9a    0x19  McuConfig.o [1]
+  .far_func.text     ro code  0x00fab3    0x19  McuConfig.o [1]
+  .far_func.text     ro code  0x00facc    0x19  McuConfig.o [1]
+  .far_func.text     ro code  0x00fae5    0x17  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00fafc    0x17  ApiDisplay.o [1]
+  .far_func.text     ro code  0x00fb13    0x17  cstartup.o [5]
+  .far_func.text     ro code  0x00fb2a    0x17  memset.o [5]
+  .far_func.text     ro code  0x00fb41    0x16  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00fb57    0x16  __dbg_xxexit.o [4]
+  .far_func.text     ro code  0x00fb6d    0x14  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00fb81    0x13  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fb94    0x13  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fba7    0x13  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fbba    0x13  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x00fbcd    0x13  stm8s_clk.o [1]
+  .far_func.text     ro code  0x00fbe0    0x13  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00fbf3    0x13  stm8s_tim3.o [1]
+  .far_func.text     ro code  0x00fc06    0x12  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fc18    0x12  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fc2a    0x12  uart3.o [1]
+  .far_func.text     ro code  0x00fc3c    0x12  strlen.o [5]
+  .far_func.text     ro code  0x00fc4e    0x10  uart3.o [1]
+  .far_func.text     ro code  0x00fc5e     0xf  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x00fc6d     0xf  Voice.o [1]
+  .far_func.text     ro code  0x00fc7c     0xe  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fc8a     0xe  KeyCmd.o [1]
+  .far_func.text     ro code  0x00fc98     0xe  far_util.o [5]
+  .far_func.text     ro code  0x00fca6     0xd  McuConfig.o [1]
+  .far_func.text     ro code  0x00fcb3     0xd  McuConfig.o [1]
+  .far_func.text     ro code  0x00fcc0     0xd  McuConfig.o [1]
+  .far_func.text     ro code  0x00fccd     0xd  McuConfig.o [1]
+  .far_func.text     ro code  0x00fcda     0xd  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x00fce7     0xd  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00fcf4     0xd  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00fd01     0xd  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00fd0e     0xd  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00fd1b     0xd  stm8s_tim3.o [1]
+  .far_func.text     ro code  0x00fd28     0xd  stm8s_tim3.o [1]
+  .far_func.text     ro code  0x00fd35     0xd  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x00fd42     0xd  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x00fd4f     0xc  stm8s_tim3.o [1]
+  .far_func.text     ro code  0x00fd5b     0xb  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fd66     0xb  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fd71     0xb  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00fd7c     0x9  stm8s_gpio.o [1]
+  .far_func.text     ro code  0x00fd85     0x9  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00fd8e     0x9  stm8s_tim3.o [1]
+  .far_func.text     ro code  0x00fd97     0x9  Tone.o [1]
+  .far_func.text     ro code  0x00fda0     0x7  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fda7     0x7  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fdae     0x7  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fdb5     0x7  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00fdbc     0x7  stm8s_gpio.o [1]
+  .far_func.text     ro code  0x00fdc3     0x6  cexit.o [5]
+  .far_func.text     ro code  0x00fdc9     0x5  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x00fdce     0x5  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00fdd3     0x5  stm8s_flash.o [1]
+  .far_func.text     ro code  0x00fdd8     0x5  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x00fddd     0x5  stm8s_tim3.o [1]
+  .far_func.text     ro code  0x00fde2     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fde6     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fdea     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fdee     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fdf2     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fdf6     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fdfa     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fdfe     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fe02     0x4  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x00fe06     0x4  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x00fe0a     0x4  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fe0e     0x4  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fe12     0x4  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fe16     0x4  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fe1a     0x4  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fe1e     0x4  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x00fe22     0x4  stm8s_gpio.o [1]
+  .far_func.text     ro code  0x00fe26     0x4  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x00fe2a     0x4  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x00fe2e     0x4  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x00fe32     0x4  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x00fe36     0x4  System.o [1]
+  .far_func.text     ro code  0x00fe3a     0x4  System.o [1]
+  .far_func.text     ro code  0x00fe3e     0x4  Task.o [1]
+  .far_func.text     ro code  0x00fe42     0x4  interrupt.o [5]
+  .far_func.text     ro code  0x00fe46     0x4  exit.o [5]
+  .far_func.text     ro code  0x00fe4a     0x3  low_level_init.o [5]
+  .far_func.text     ro code  0x00fe4d     0x3  unhandled_exception.o [5]
+  .far_func.text     ro code  0x00fe50     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe51     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe52     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe53     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe54     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe55     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe56     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe57     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe58     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe59     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe5a     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe5b     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe5c     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe5d     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe5e     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe5f     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe60     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe61     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe62     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe63     0x1  stm8s_it.o [1]
+  .far_func.text     ro code  0x00fe64     0x1  __dbg_break.o [4]
+                            - 0x00fe65  0x5123
+
+"P4", part 2 of 2:                      0x667c
+  .far_func.text     ro code  0x010000   0x2cd  GT20L16P1Y.o [3]
+  .far_func.text     ro code  0x0102cd   0x2a7  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x010574   0x288  ADC.o [1]
+  .far_func.text     ro code  0x0107fc   0x252  DrvHTG12832.o [1]
+  .far_func.text     ro code  0x010a4e   0x251  GT20L16P1Y.o [3]
+  .far_func.text     ro code  0x010c9f   0x24d  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x010eec   0x248  Task.o [1]
+  .far_func.text     ro code  0x011134   0x240  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x011374   0x22c  Config.o [1]
+  .far_func.text     ro code  0x0115a0   0x227  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x0117c7   0x211  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x0119d8   0x211  DrvKeyboard.o [1]
+  .far_func.text     ro code  0x011be9   0x206  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x011def   0x1ff  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x011fee   0x1b2  uart3.o [1]
+  .far_func.text     ro code  0x0121a0   0x1ac  long.o [5]
+  .far_func.text     ro code  0x01234c   0x1a9  ApiMenu.o [1]
+  .far_func.text     ro code  0x0124f5   0x190  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x012685   0x189  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x01280e   0x185  GT20L16P1Y.o [3]
+  .far_func.text     ro code  0x012993   0x173  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x012b06   0x165  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x012c6b   0x15c  vreg_util.o [5]
+  .far_func.text     ro code  0x012dc7   0x159  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x012f20   0x153  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x013073   0x149  Task.o [1]
+  .far_func.text     ro code  0x0131bc   0x148  DrvKeyboard.o [1]
+  .far_func.text     ro code  0x013304   0x145  ApiMenu.o [1]
+  .far_func.text     ro code  0x013449   0x13f  DrvKeyboard.o [1]
+  .far_func.text     ro code  0x013588   0x13b  DrvGT20L16S1Y.o [1]
+  .far_func.text     ro code  0x0136c3   0x134  CommonLib.o [1]
+  .far_func.text     ro code  0x0137f7   0x134  DrvGT20L16S1Y.o [1]
+  .far_func.text     ro code  0x01392b   0x12a  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x013a55   0x11a  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x013b6f   0x10b  System.o [1]
+  .far_func.text     ro code  0x013c7a   0x103  stm8s_itc.o [1]
+  .far_func.text     ro code  0x013d7d    0xfa  CommonLib.o [1]
+  .far_func.text     ro code  0x013e77    0xf3  uart3.o [1]
+  .far_func.text     ro code  0x013f6a    0xeb  DrvGD83.o [1]
+  .far_func.text     ro code  0x014055    0xe9  uart3.o [1]
+  .far_func.text     ro code  0x01413e    0xe5  ApiKeyboard.o [1]
+  .far_func.text     ro code  0x014223    0xdf  uart3.o [1]
+  .far_func.text     ro code  0x014302    0xd9  ApiDisplay.o [1]
+  .far_func.text     ro code  0x0143db    0xd8  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x0144b3    0xc8  ApiDisplay.o [1]
+  .far_func.text     ro code  0x01457b    0xc0  ApiDisplay.o [1]
+  .far_func.text     ro code  0x01463b    0xba  uart3.o [1]
+  .far_func.text     ro code  0x0146f5    0xb6  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x0147ab    0xb2  CommonLib.o [1]
+  .far_func.text     ro code  0x01485d    0xb0  ApiDisplay.o [1]
+  .far_func.text     ro code  0x01490d    0xaf  stm8s_gpio.o [1]
+  .far_func.text     ro code  0x0149bc    0xad  uart3.o [1]
+  .far_func.text     ro code  0x014a69    0xa3  Delay.o [1]
+  .far_func.text     ro code  0x014b0c    0xa2  stm8s_clk.o [1]
+  .far_func.text     ro code  0x014bae    0x9c  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x014c4a    0x99  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x014ce3    0x97  ApiDisplay.o [1]
+  .far_func.text     ro code  0x014d7a    0x96  CommonLib.o [1]
+  .far_func.text     ro code  0x014e10    0x96  DrvKeyboard.o [1]
+  .far_func.text     ro code  0x014ea6    0x95  ApiLED.o [1]
+  .far_func.text     ro code  0x014f3b    0x95  uart3.o [1]
+  .far_func.text     ro code  0x014fd0    0x92  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x015062    0x8f  Tone.o [1]
+  .far_func.text     ro code  0x0150f1    0x8f  uart3.o [1]
+  .far_func.text     ro code  0x015180    0x8d  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x01520d    0x8d  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x01529a    0x88  ApiDisplay.o [1]
+  .far_func.text     ro code  0x015322    0x85  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x0153a7    0x82  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x015429    0x80  DrvGD83.o [1]
+  .far_func.text     ro code  0x0154a9    0x73  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x01551c    0x73  Delay.o [1]
+  .far_func.text     ro code  0x01558f    0x72  DrvKeyboard.o [1]
+  .far_func.text     ro code  0x015601    0x71  Voice.o [1]
+  .far_func.text     ro code  0x015672    0x6e  uart3.o [1]
+  .far_func.text     ro code  0x0156e0    0x6d  stm8s_uart1.o [1]
+  .far_func.text     ro code  0x01574d    0x6d  Tone.o [1]
+  .far_func.text     ro code  0x0157ba    0x6b  Tone.o [1]
+  .far_func.text     ro code  0x015825    0x69  uart3.o [1]
+  .far_func.text     ro code  0x01588e    0x67  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x0158f5    0x64  ApiDisplay.o [1]
+  .far_func.text     ro code  0x015959    0x64  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x0159bd    0x64  CommonLib.o [1]
+  .far_func.text     ro code  0x015a21    0x64  long_util.o [5]
+  .far_func.text     ro code  0x015a85    0x62  ApiPocCmd.o [1]
+  .far_func.text     ro code  0x015ae7    0x61  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x015b48    0x61  ApiAtCmd.o [1]
+  .far_func.text     ro code  0x015ba9    0x61  ApiDisplay.o [1]
+  .far_func.text     ro code  0x015c0a    0x61  KeyCmd.o [1]
+  .far_func.text     ro code  0x015c6b    0x61  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x015ccc    0x5f  ADC.o [1]
+  .far_func.text     ro code  0x015d2b    0x5e  CommonLib.o [1]
+  .far_func.text     ro code  0x015d89    0x5d  short.o [5]
+  .far_func.text     ro code  0x015de6    0x5c  GT20L16P1Y_D.o [1]
+  .far_func.text     ro code  0x015e42    0x5c  uart3.o [1]
+  .far_func.text     ro code  0x015e9e    0x58  stm8s_clk.o [1]
+  .far_func.text     ro code  0x015ef6    0x58  dc_util.o [5]
+  .far_func.text     ro code  0x015f4e    0x57  ApiDisplay.o [1]
+  .far_func.text     ro code  0x015fa5    0x56  stm8s_it.o [1]
+  .far_func.text     ro code  0x015ffb    0x55  Delay.o [1]
+  .far_func.text     ro code  0x016050    0x54  stm8s_adc2.o [1]
+  .far_func.text     ro code  0x0160a4    0x52  uart3.o [1]
+  .far_func.text     ro code  0x0160f6    0x50  Flash_eeprom.o [1]
+  .far_func.text     ro code  0x016146    0x4f  ApiDisplay.o [1]
+  .far_func.text     ro code  0x016195    0x4f  Flash_eeprom.o [1]
+  .far_func.text     ro code  0x0161e4    0x4f  uart3.o [1]
+  .far_func.text     ro code  0x016233    0x4f  Voice.o [1]
+  .far_func.text     ro code  0x016282    0x4e  CommonLib.o [1]
+  .far_func.text     ro code  0x0162d0    0x4e  System.o [1]
+  .far_func.text     ro code  0x01631e    0x4a  DrvGD83.o [1]
+  .far_func.text     ro code  0x016368    0x4a  DrvGD83.o [1]
+  .far_func.text     ro code  0x0163b2    0x4a  DrvGD83.o [1]
+  .far_func.text     ro code  0x0163fc    0x4a  DrvGD83.o [1]
+  .far_func.text     ro code  0x016446    0x49  stm8s_uart3.o [1]
+  .far_func.text     ro code  0x01648f    0x48  Flash_eeprom.o [1]
+  .far_func.text     ro code  0x0164d7    0x48  GT20L16P1Y_D.o [1]
+  .far_func.text     ro code  0x01651f    0x48  GT20L16P1Y_D.o [1]
+  .far_func.text     ro code  0x016567    0x47  GT20L16P1Y.o [3]
+  .far_func.text     ro code  0x0165ae    0x45  ApiGpsCmd.o [1]
+  .far_func.text     ro code  0x0165f3    0x45  Flash_eeprom.o [1]
+  .far_func.text     ro code  0x016638    0x43  stm8s_tim1.o [1]
+  .far_func.text     ro code  0x01667b     0x1  ApiKeyboard.o [1]
+                            - 0x01667c  0x667c
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address   Size
+          -------   ----
+Zero (__iar_zero_init2)
+    3 destination ranges, total size 0x1648:
+          0x000010  0x99f
+          0x0009af  0x52f
+          0x000ede  0x77a
+
+Copy (__iar_copy_init2)
+    1 source range, total size 0x66:
+          0x00a2e0   0x66
+    1 destination range, total size 0x66:
+          0x001658   0x66
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+E:\1-source\A508_TCP版本\PRJ\Debug\Obj: [1]
+    ADC.o                      816      162        7
+    ApiAtCmd.o               3 196      390      205
+    ApiBeidou.o                                   82
+    ApiDisplay.o             1 850    1 128      578
+    ApiGpsCmd.o              3 831               478
+    ApiKeyboard.o            4 256      217       34
+    ApiLED.o                   149                 1
+    ApiMenu.o                1 731      647       15
+    ApiPocCmd.o              5 991      123    2 831
+    Beep.o                     867                18
+    CommonLib.o              1 158       17
+    Config.o                   556
+    Delay.o                  2 925      138       54
+    DrvGD83.o                2 847       33    1 336
+    DrvGT20L16S1Y.o            679
+    DrvHTG12832.o              594                 2
+    DrvKeyboard.o            1 440
+    Flash_eeprom.o             362
+    GT20L16P1Y_D.o             274    7 776
+    KeyCmd.o                   143       66
+    McuConfig.o                368
+    System.o                   353       23       20
+    Task.o                   2 763      614       44
+    Tone.o                     406                21
+    Voice.o                    207                 6
+    main.o                      39
+    stm8s_adc2.o               379
+    stm8s_clk.o                269        4
+    stm8s_flash.o              201
+    stm8s_gpio.o               195
+    stm8s_it.o                 211                 1
+    stm8s_itc.o                259
+    stm8s_tim1.o               438
+    stm8s_tim3.o                71
+    stm8s_uart1.o              731
+    stm8s_uart3.o              752
+    sysclock.o                 128
+    uart3.o                  2 343       30       73
+    ------------------------------------------------
+    Total:                  43 778   11 368    5 806
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+GT20L16_STM8_DOUBLE_MEDIUM_IAR.a: [3]
+    GT20L16P1Y.o             1 770       62
+    ------------------------------------------------
+    Total:                   1 770       62
+
+dbgstm8mmd.a: [4]
+    __dbg_break.o                1
+    __dbg_xxexit.o              22
+    ------------------------------------------------
+    Total:                      23
+
+dlstm8mmn.a: [5]
+    cexit.o                      6
+    char.o                      52
+    cstartup.o                  23
+    dc_util.o                   88
+    exit.o                       4
+    far_util.o                  14
+    init.o                      30
+    init_small.o                70
+    interrupt.o                  4      128
+    long.o                     428
+    long_util.o                100
+    low_level_init.o             3
+    memcmp.o                    54
+    memcpy.o                    38
+    memset.o                    23
+    move.o                      37
+    short.o                     93
+    strlen.o                    18
+    unhandled_exception.o        3
+    vreg_util.o                348
+    vregs.o                                       16
+    ------------------------------------------------
+    Total:                   1 436      128       16
+
+    Linker created                       28      256
+----------------------------------------------------
+    Grand Total:            47 007   11 586    6 078
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                    Address    Size  Type      Object
+-----                    -------    ----  ----      ------
+.iar.init_table$$Base   0x00a4f6           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00a512           --   Gb  - Linker created -
+?add32_l0_l0_0x         0x0121a3          Code  Gb  long.o [5]
+?add32_l0_l0_l1         0x0121a0          Code  Gb  long.o [5]
+?and32_l0_l0_0x         0x0122df          Code  Gb  long.o [5]
+?and32_l0_l0_l1         0x0122dc          Code  Gb  long.o [5]
+?b0                     0x000000          Data  Gb  vregs.o [5]
+?b1                     0x000001          Data  Gb  vregs.o [5]
+?b10                    0x00000a          Data  Gb  vregs.o [5]
+?b11                    0x00000b          Data  Gb  vregs.o [5]
+?b12                    0x00000c          Data  Gb  vregs.o [5]
+?b13                    0x00000d          Data  Gb  vregs.o [5]
+?b14                    0x00000e          Data  Gb  vregs.o [5]
+?b15                    0x00000f          Data  Gb  vregs.o [5]
+?b2                     0x000002          Data  Gb  vregs.o [5]
+?b3                     0x000003          Data  Gb  vregs.o [5]
+?b4                     0x000004          Data  Gb  vregs.o [5]
+?b5                     0x000005          Data  Gb  vregs.o [5]
+?b6                     0x000006          Data  Gb  vregs.o [5]
+?b7                     0x000007          Data  Gb  vregs.o [5]
+?b8                     0x000008          Data  Gb  vregs.o [5]
+?b9                     0x000009          Data  Gb  vregs.o [5]
+?dc32_l0                0x015ef6          Code  Gb  dc_util.o [5]
+?dc32_l1                0x015f22          Code  Gb  dc_util.o [5]
+?e0                     0x000001          Data  Gb  vregs.o [5]
+?e1                     0x000005          Data  Gb  vregs.o [5]
+?e2                     0x000009          Data  Gb  vregs.o [5]
+?e3                     0x00000d          Data  Gb  vregs.o [5]
+?epilogue_l2            0x012d23          Code  Gb  vreg_util.o [5]
+?epilogue_l2_l3         0x012d1f          Code  Gb  vreg_util.o [5]
+?epilogue_l2_w6         0x012d28          Code  Gb  vreg_util.o [5]
+?epilogue_w4            0x012d31          Code  Gb  vreg_util.o [5]
+?l0                     0x000000          Data  Gb  vregs.o [5]
+?l1                     0x000004          Data  Gb  vregs.o [5]
+?l2                     0x000008          Data  Gb  vregs.o [5]
+?l3                     0x00000c          Data  Gb  vregs.o [5]
+?load24_e1_0x           0x00fc98          Code  Gb  far_util.o [5]
+?load32_0x_l0           0x015a77          Code  Gb  long_util.o [5]
+?load32_l0_0x           0x015a3b          Code  Gb  long_util.o [5]
+?load32_l0_asp          0x015a2f          Code  Gb  long_util.o [5]
+?load32_l0_dbsp         0x015a21          Code  Gb  long_util.o [5]
+?load32_l0_xsp          0x015a31          Code  Gb  long_util.o [5]
+?load32_l1_0x           0x015a61          Code  Gb  long_util.o [5]
+?load32_l1_asp          0x015a55          Code  Gb  long_util.o [5]
+?load32_l1_dbsp         0x015a47          Code  Gb  long_util.o [5]
+?load32_l1_xsp          0x015a57          Code  Gb  long_util.o [5]
+?load32_xsp_l0          0x015a6d          Code  Gb  long_util.o [5]
+?longfarg16_v_w0_a      0x00f898          Code  Gb  move.o [5]
+?longfarg16_v_w0_x      0x00f89a          Code  Gb  move.o [5]
+?mov_e0_e1              0x012d4e          Code  Gb  vreg_util.o [5]
+?mov_e0_e2              0x012d5b          Code  Gb  vreg_util.o [5]
+?mov_e0_e3              0x012d68          Code  Gb  vreg_util.o [5]
+?mov_e1_e0              0x012d75          Code  Gb  vreg_util.o [5]
+?mov_e1_e2              0x012d82          Code  Gb  vreg_util.o [5]
+?mov_e1_e3              0x012d8f          Code  Gb  vreg_util.o [5]
+?mov_e2_e0              0x012d9c          Code  Gb  vreg_util.o [5]
+?mov_e3_e0              0x012db0          Code  Gb  vreg_util.o [5]
+?mov_e3_e1              0x012dbd          Code  Gb  vreg_util.o [5]
+?mov_l0_l1              0x012d4b          Code  Gb  vreg_util.o [5]
+?mov_l0_l2              0x012d58          Code  Gb  vreg_util.o [5]
+?mov_l0_l3              0x012d65          Code  Gb  vreg_util.o [5]
+?mov_l1_l0              0x012d72          Code  Gb  vreg_util.o [5]
+?mov_l1_l2              0x012d7f          Code  Gb  vreg_util.o [5]
+?mov_l1_l3              0x012d8c          Code  Gb  vreg_util.o [5]
+?mov_l2_l0              0x012d99          Code  Gb  vreg_util.o [5]
+?mov_l3_l0              0x012dad          Code  Gb  vreg_util.o [5]
+?mov_l3_l1              0x012dba          Code  Gb  vreg_util.o [5]
+?mov_w1_w3              0x012d51          Code  Gb  vreg_util.o [5]
+?mov_w1_w4              0x012d36          Code  Gb  vreg_util.o [5]
+?mov_w1_w5              0x012d5e          Code  Gb  vreg_util.o [5]
+?mov_w1_w7              0x012d6b          Code  Gb  vreg_util.o [5]
+?mov_w2_w1              0x012d3d          Code  Gb  vreg_util.o [5]
+?mov_w3_w1              0x012d78          Code  Gb  vreg_util.o [5]
+?mov_w3_w5              0x012d85          Code  Gb  vreg_util.o [5]
+?mov_w3_w7              0x012d92          Code  Gb  vreg_util.o [5]
+?mov_w5_w1              0x012d9f          Code  Gb  vreg_util.o [5]
+?mov_w5_w3              0x012da6          Code  Gb  vreg_util.o [5]
+?mov_w6_w0              0x012d44          Code  Gb  vreg_util.o [5]
+?mov_w7_w1              0x012db3          Code  Gb  vreg_util.o [5]
+?mov_w7_w3              0x012dc0          Code  Gb  vreg_util.o [5]
+?move1616_v_x_y_a       0x00f88b          Code  Gb  move.o [5]
+?mul16_x_x_w0           0x015d89          Code  Gb  short.o [5]
+?mul32_l0_l0_l1         0x0121d6          Code  Gb  long.o [5]
+?or32_l0_l0_0x          0x0122fa          Code  Gb  long.o [5]
+?or32_l0_l0_l1          0x0122f7          Code  Gb  long.o [5]
+?pop_l0                 0x012ce7          Code  Gb  vreg_util.o [5]
+?pop_l1                 0x012cf2          Code  Gb  vreg_util.o [5]
+?pop_l2                 0x012cfd          Code  Gb  vreg_util.o [5]
+?pop_l3                 0x012d08          Code  Gb  vreg_util.o [5]
+?pop_w4                 0x012c91          Code  Gb  vreg_util.o [5]
+?pop_w5                 0x012c98          Code  Gb  vreg_util.o [5]
+?pop_w6                 0x012c9f          Code  Gb  vreg_util.o [5]
+?push_l0                0x012cb2          Code  Gb  vreg_util.o [5]
+?push_l1                0x012cb7          Code  Gb  vreg_util.o [5]
+?push_l2                0x012cbc          Code  Gb  vreg_util.o [5]
+?push_l3                0x012cc1          Code  Gb  vreg_util.o [5]
+?push_w4                0x012c6b          Code  Gb  vreg_util.o [5]
+?push_w5                0x012c70          Code  Gb  vreg_util.o [5]
+?push_w6                0x012c75          Code  Gb  vreg_util.o [5]
+?sdiv16_x_x_y           0x015da7          Code  Gb  short.o [5]
+?sdiv8_xl_a_b0          0x00f37e          Code  Gb  char.o [5]
+?sext16_x_a             0x015ddf          Code  Gb  short.o [5]
+?sext32_l0_a            0x01233f          Code  Gb  long.o [5]
+?sext32_l0_x            0x012334          Code  Gb  long.o [5]
+?sll16_x_x_4            0x015dda          Code  Gb  short.o [5]
+?sll16_x_x_5            0x015dd9          Code  Gb  short.o [5]
+?sll16_x_x_6            0x015dd8          Code  Gb  short.o [5]
+?sll16_x_x_a            0x015dd0          Code  Gb  short.o [5]
+?sll32_0x_0x_a          0x012315          Code  Gb  long.o [5]
+?sll32_l0_l0_a          0x012312          Code  Gb  long.o [5]
+?smod16_y_x_y           0x015dc0          Code  Gb  short.o [5]
+?smod8_a_b0_a           0x00f398          Code  Gb  char.o [5]
+?srl32_0x_0x_a          0x012326          Code  Gb  long.o [5]
+?srl32_l0_l0_a          0x012323          Code  Gb  long.o [5]
+?srl8_a_a_5             0x00f3ad          Code  Gb  char.o [5]
+?srl8_a_a_6             0x00f3ac          Code  Gb  char.o [5]
+?sub32_l0_l0_0x         0x0121be          Code  Gb  long.o [5]
+?sub32_l0_l0_l1         0x0121bb          Code  Gb  long.o [5]
+?ucmp32_c_l0_l1         0x0122d1          Code  Gb  long.o [5]
+?udiv32_l0_dl_l1        0x01225a          Code  Gb  long.o [5]
+?udiv32_l0_l0_dl        0x012260          Code  Gb  long.o [5]
+?udiv32_l0_l0_l1        0x012264          Code  Gb  long.o [5]
+?umod32_l1_l0_dl        0x012254          Code  Gb  long.o [5]
+?umod32_l1_l0_l1        0x012264          Code  Gb  long.o [5]
+?w0                     0x000000          Data  Gb  vregs.o [5]
+?w1                     0x000002          Data  Gb  vregs.o [5]
+?w2                     0x000004          Data  Gb  vregs.o [5]
+?w3                     0x000006          Data  Gb  vregs.o [5]
+?w4                     0x000008          Data  Gb  vregs.o [5]
+?w5                     0x00000a          Data  Gb  vregs.o [5]
+?w6                     0x00000c          Data  Gb  vregs.o [5]
+?w7                     0x00000e          Data  Gb  vregs.o [5]
+ADC2_Cmd                0x00fcda     0xd  Code  Gb  stm8s_adc2.o [1]
+ADC2_ConversionConfig   0x00f472    0x2f  Code  Gb  stm8s_adc2.o [1]
+ADC2_ExternalTriggerConfig
+                        0x00f938    0x21  Code  Gb  stm8s_adc2.o [1]
+ADC2_GetConversionValue
+                        0x016050    0x54  Code  Gb  stm8s_adc2.o [1]
+ADC2_IRQHandler         0x00fe61     0x1  Code  Gb  stm8s_it.o [1]
+ADC2_Init               0x00f3e4    0x30  Code  Gb  stm8s_adc2.o [1]
+ADC2_PrescalerConfig    0x00fbba    0x13  Code  Gb  stm8s_adc2.o [1]
+ADC2_SchmittTriggerConfig
+                        0x0153a7    0x82  Code  Gb  stm8s_adc2.o [1]
+ADC2_StartConversion    0x00fdc9     0x5  Code  Gb  stm8s_adc2.o [1]
+ADC_Init                0x00f8d4    0x22  Code  Gb  ADC.o [1]
+AF_Mute_Init            0x00fcb3     0xd  Code  Gb  McuConfig.o [1]
+ASCII_ActiveUserID      0x001531    0x16  Data  Gb  ApiPocCmd.o [1]
+AUDIO_IOAFMUT           0x00fab3    0x19  Code  Gb  McuConfig.o [1]
+AUDIO_IOAFPOW           0x00facc    0x19  Code  Gb  McuConfig.o [1]
+AWU_IRQHandler          0x00fe52     0x1  Code  Gb  stm8s_it.o [1]
+AkeyvolumeCount         0x001688     0x1  Data  Gb  ApiKeyboard.o [1]
+ApGpsCmd_10msRenew      0x00f8f6    0x21  Code  Gb  ApiGpsCmd.o [1]
+ApiAtCmd_100msRenew     0x00f027    0xac  Code  Gb  ApiAtCmd.o [1]
+ApiAtCmd_10msRenew      0x013a55   0x11a  Code  Gb  ApiAtCmd.o [1]
+ApiAtCmd_GetGroupName   0x00fc06    0x12  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetGroupNameLen
+                        0x00fb81    0x13  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetGroupNum    0x00fe0e     0x4  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetLoginState  0x00fdae     0x7  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetMainGroupId
+                        0x00fe16     0x4  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetMainWorkName
+                        0x00fe0a     0x4  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetUserName    0x00fc18    0x12  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetUserNameLen
+                        0x00fb94    0x13  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_GetUserNum     0x00fe12     0x4  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_Get_DateTime_Information
+                        0x012f20   0x153  Code  Gb  ApiAtCmd.o [1]
+ApiAtCmd_Get_location_Information
+                        0x0124f5   0x190  Code  Gb  ApiAtCmd.o [1]
+ApiAtCmd_PlayVoice      0x0154a9    0x73  Code  Gb  ApiAtCmd.o [1]
+ApiAtCmd_SetLoginState  0x00fc7c     0xe  Code  Gb  ApiPocCmd.o [1]
+ApiAtCmd_WritCommand    0x00edfd   0x22a  Code  Gb  ApiAtCmd.o [1]
+ApiAtCmd_ZTTSCount      0x001633     0x1  Data  Gb  Delay.o [1]
+ApiAtCmd_ZTTS_Flag      0x0015d0     0x1  Data  Gb  ApiAtCmd.o [1]
+ApiAtCmd_tcp_state      0x00fd5b     0xb  Code  Gb  ApiAtCmd.o [1]
+ApiCaretCmd_10msRenew   0x0102cd   0x2a7  Code  Gb  ApiAtCmd.o [1]
+ApiGpsCmd_100msRenew    0x00e1dc   0x1fc  Code  Gb  ApiGpsCmd.o [1]
+ApiGpsCmd_PowerOnInitial
+                        0x011134   0x240  Code  Gb  ApiGpsCmd.o [1]
+ApiGpsServerType        0x0015e0     0x1  Data  Gb  ApiGpsCmd.o [1]
+ApiGps_GetTcpPortAddress_No5
+                        0x00fe06     0x4  Code  Gb  ApiGpsCmd.o [1]
+ApiMenu_BacklightTimeSet_Flag
+                        0x001600     0x1  Data  Gb  ApiMenu.o [1]
+ApiMenu_BeiDouOrWritingFrequency_Flag
+                        0x001602     0x1  Data  Gb  ApiMenu.o [1]
+ApiMenu_GpsInfo_Flag    0x0015fe     0x1  Data  Gb  ApiMenu.o [1]
+ApiMenu_KeylockTimeSet_Flag
+                        0x001601     0x1  Data  Gb  ApiMenu.o [1]
+ApiMenu_NativeInfo_Flag
+                        0x0015ff     0x1  Data  Gb  ApiMenu.o [1]
+ApiMenu_SwitchCallUser_Flag
+                        0x0015fc     0x1  Data  Gb  ApiMenu.o [1]
+ApiMenu_SwitchGroup_Flag
+                        0x0015fb     0x1  Data  Gb  ApiMenu.o [1]
+ApiMenu_SwitchOnlineUser_Flag
+                        0x0015fd     0x1  Data  Gb  ApiMenu.o [1]
+ApiPocCmd_10msRenew     0x00c698   0x951  Code  Gb  ApiPocCmd.o [1]
+ApiPocCmd_PersonalCallingMode
+                        0x001608     0x1  Data  Gb  ApiPocCmd.o [1]
+ApiPocCmd_PlayReceivedVoice_Flag
+                        0x001614     0x1  Data  Gb  ApiPocCmd.o [1]
+ApiPocCmd_Tone_Flag     0x001613     0x1  Data  Gb  ApiPocCmd.o [1]
+ApiPocCmd_WritCommand   0x011def   0x1ff  Code  Gb  ApiPocCmd.o [1]
+ApiPocCmd_user_info_get
+                        0x00f272    0x36  Code  Gb  ApiPocCmd.o [1]
+ApiPocCmd_user_info_set
+                        0x0143db    0xd8  Code  Gb  ApiPocCmd.o [1]
+AtCmdDrvobj             0x0012a1    0x92  Data  Lc  ApiAtCmd.o [1]
+AtCmd_NetParamCode      0x015180    0x8d  Code  Lc  ApiAtCmd.o [1]
+AtNotify_Queue          0x00d083    0x4d  Code  Lc  DrvGD83.o [1]
+AtNotify_Queue_Start    0x00d0d0    0x56  Code  Lc  DrvGD83.o [1]
+BEEP_Interrupt10ms      0x00fa15    0x1c  Code  Gb  Beep.o [1]
+BEEP_PowerOnInitial     0x00ed2a    0xd3  Code  Gb  Beep.o [1]
+BEEP_SetOutput          0x00eaee   0x23c  Code  Gb  Beep.o [1]
+BEEP_Time               0x00f202    0x38  Code  Gb  Beep.o [1]
+BacklightTimeBuf1       0x0015f9     0x1  Data  Gb  ApiMenu.o [1]
+BacklightTimeBuf2       0x0015fa     0x1  Data  Gb  ApiMenu.o [1]
+BacklightTimeCount      0x001639     0x1  Data  Gb  Delay.o [1]
+BacklightTimeSetCount   0x001691     0x1  Data  Gb  ApiKeyboard.o [1]
+BatteryLevel            0x0015c7     0x1  Data  Gb  ADC.o [1]
+BeepDrvObj              0x00155b    0x12  Data  Lc  Beep.o [1]
+BeidouRxData            0x001383    0x4b  Data  Gb  ApiBeidou.o [1]
+BeidouRxDataLen         0x0015d9     0x1  Data  Gb  ApiBeidou.o [1]
+BitTab                  0x00ac81     0x8  Data  Gb  ApiDisplay.o [1]
+BootProcess_PPPCFG_Flag
+                        0x0015cf     0x1  Data  Gb  ApiAtCmd.o [1]
+BootProcess_SIMST_Flag  0x0015ce     0x1  Data  Gb  ApiAtCmd.o [1]
+CFG_GetCurAdr           0x011374   0x22c  Code  Gb  Config.o [1]
+CHAR_HIGH               0x00a9f4    0x10  Data  Gb  ApiDisplay.o [1]
+CHAR_TO_Digital         0x01588e    0x67  Code  Gb  ApiAtCmd.o [1]
+CHAR_WIDTH              0x00aa04    0x10  Data  Gb  ApiDisplay.o [1]
+CLK_ClockSwitchConfig   0x014b0c    0xa2  Code  Gb  stm8s_clk.o [1]
+CLK_GetClockFreq        0x015e9e    0x58  Code  Gb  stm8s_clk.o [1]
+CLK_HSIPrescalerConfig  0x00fbcd    0x13  Code  Gb  stm8s_clk.o [1]
+CLK_IRQHandler          0x00fe53     0x1  Code  Gb  stm8s_it.o [1]
+COMLHexArray2String     0x015959    0x64  Code  Lc  ApiGpsCmd.o [1]
+COML_AscToHex           0x013d7d    0xfa  Code  Gb  CommonLib.o [1]
+COML_DecToAsc           0x0159bd    0x64  Code  Gb  CommonLib.o [1]
+COML_HexToAsc           0x0147ab    0xb2  Code  Gb  CommonLib.o [1]
+COML_HexToAsc2          0x014d7a    0x96  Code  Gb  CommonLib.o [1]
+COML_StringReverse      0x015d2b    0x5e  Code  Gb  CommonLib.o [1]
+CSQTimeCount            0x001627     0x1  Data  Gb  Delay.o [1]
+CSQValue                0x0015d4     0x1  Data  Gb  ApiAtCmd.o [1]
+CSQ_Flag                0x0015d1     0x1  Data  Gb  ApiAtCmd.o [1]
+CSTACK$$Base            0x001700           --   Gb  - Linker created -
+CSTACK$$Limit           0x001800           --   Gb  - Linker created -
+C_TEST_OUT_SET          0x00fccd     0xd  Code  Gb  McuConfig.o [1]
+CaretNotify_Queue       0x00cfe9    0x4d  Code  Lc  DrvGD83.o [1]
+CaretNotify_Queue_Start
+                        0x00d17c    0x56  Code  Lc  DrvGD83.o [1]
+CharCode                0x0015b9     0x2  Data  Gb  ApiDisplay.o [1]
+Combine2Hex             0x0136c3   0x134  Code  Gb  CommonLib.o [1]
+Count                   0x0015c8     0x1  Data  Gb  ADC.o [1]
+Count2                  0x0015c9     0x1  Data  Gb  ADC.o [1]
+Count3                  0x0015ca     0x1  Data  Gb  ADC.o [1]
+DEL_100msProcess        0x00c5e0    0x63  Code  Lc  Delay.o [1]
+DEL_10msProcess         0x00c643    0x1d  Code  Lc  Delay.o [1]
+DEL_1msProcess          0x00c660    0x28  Code  Lc  Delay.o [1]
+DEL_500msProcess        0x00bcfc   0x8e4  Code  Lc  Delay.o [1]
+DEL_500ms_Count         0x001621     0x1  Data  Gb  Delay.o [1]
+DEL_500ms_Count2        0x001622     0x1  Data  Gb  Delay.o [1]
+DEL_GetTimer            0x015ffb    0x55  Code  Gb  Delay.o [1]
+DEL_Interrupt           0x014a69    0xa3  Code  Gb  Delay.o [1]
+DEL_PowerOnInitial      0x00f917    0x21  Code  Gb  Delay.o [1]
+DEL_Renew               0x00c688    0x10  Code  Gb  Delay.o [1]
+DEL_SetTimer            0x01551c    0x73  Code  Gb  Delay.o [1]
+DEL_Soft1ms             0x00fa31    0x1c  Code  Gb  Delay.o [1]
+DEL_TimerRenew          0x00f6b8    0x29  Code  Lc  Delay.o [1]
+DISP_DataBuf            0x0144b3    0xc8  Code  Lc  ApiDisplay.o [1]
+DISP_MulTypePro         0x01457b    0xc0  Code  Lc  ApiDisplay.o [1]
+DISP_MulTypePro2        0x014302    0xd9  Code  Lc  ApiDisplay.o [1]
+Data_Date0              0x00fdf6     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Date1              0x00fdfa     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Date2              0x00fdfe     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Latitude_Minute    0x00fde6     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Latitude_Second    0x00fda7     0x7  Code  Gb  ApiAtCmd.o [1]
+Data_Longitude_Minute   0x00fde2     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Longitude_Second   0x00fda0     0x7  Code  Gb  ApiAtCmd.o [1]
+Data_Speed              0x00fe02     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Time0              0x00fdea     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Time1              0x00fdee     0x4  Code  Gb  ApiAtCmd.o [1]
+Data_Time2              0x00fdf2     0x4  Code  Gb  ApiAtCmd.o [1]
+Dec2Hex                 0x016282    0x4e  Code  Gb  CommonLib.o [1]
+DefaultSystemClockForHSI
+                        0x00f9ba    0x1f  Code  Gb  sysclock.o [1]
+DelDrvObj               0x001599     0xb  Data  Lc  Delay.o [1]
+Delay_100ms             0x00f0d3    0x40  Code  Gb  Task.o [1]
+DisDataBit              0x001412    0x40  Data  Gb  ApiDisplay.o [1]
+DisDataBuf              0x000ede   0x200  Data  Gb  ApiDisplay.o [1]
+DrvGD83DrvObj           0x0009af   0x52f  Data  Lc  DrvGD83.o [1]
+DrvGD83_UART_TxCommand  0x015429    0x80  Code  Gb  DrvGD83.o [1]
+DrvMC8332_AtNotify_Queue_front
+                        0x016368    0x4a  Code  Gb  DrvGD83.o [1]
+DrvMC8332_CaretNotify_Queue_front
+                        0x01631e    0x4a  Code  Gb  DrvGD83.o [1]
+DrvMC8332_GpsNotify_Queue_front
+                        0x0163fc    0x4a  Code  Gb  DrvGD83.o [1]
+DrvMC8332_PocNotify_Queue_front
+                        0x0163b2    0x4a  Code  Gb  DrvGD83.o [1]
+DrvMC8332_Software_Initial
+                        0x00f151    0x3d  Code  Gb  DrvGD83.o [1]
+DrvMC8332_TxPort_SetValidable
+                        0x00f60e    0x2c  Code  Gb  DrvGD83.o [1]
+DrvMC8332_UART_Interrupt
+                        0x00d441   0x3cb  Code  Gb  DrvGD83.o [1]
+DrvMc8332_UART_TxTail   0x013f6a    0xeb  Code  Gb  DrvGD83.o [1]
+Duty_Val                0x0015c5     0x2  Data  Gb  Tone.o [1]
+EEPROM_EEC_IRQHandler   0x00fe63     0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTA_IRQHandler   0x00fe54     0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTB_IRQHandler   0x00fe55     0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTC_IRQHandler   0x00fe56     0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTD_IRQHandler   0x00fe57     0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTE_IRQHandler   0x00fe58     0x1  Code  Gb  stm8s_it.o [1]
+EnterKeyTimeCount       0x00162a     0x1  Data  Gb  Delay.o [1]
+EnterPersonalCalling    0x001616     0x1  Data  Gb  ApiPocCmd.o [1]
+EnterPttMomentCount     0x00164a     0x1  Data  Gb  Task.o [1]
+EnterPttMoment_Flag     0x00164c     0x1  Data  Gb  Task.o [1]
+FILE_Read               0x01648f    0x48  Code  Gb  Flash_eeprom.o [1]
+FILE_Read2              0x0165f3    0x45  Code  Gb  Flash_eeprom.o [1]
+FILE_Write              0x016195    0x4f  Code  Gb  Flash_eeprom.o [1]
+FILE_Write2             0x0160f6    0x50  Code  Gb  Flash_eeprom.o [1]
+FLASH_EraseOptionByte   0x00f70a    0x28  Code  Gb  stm8s_flash.o [1]
+FLASH_GetFlagStatus     0x00fb6d    0x14  Code  Gb  stm8s_flash.o [1]
+FLASH_Lock              0x00fdb5     0x7  Code  Gb  stm8s_flash.o [1]
+FLASH_ProgramByte       0x00fdce     0x5  Code  Gb  stm8s_flash.o [1]
+FLASH_ProgramOptionByte
+                        0x00f841    0x25  Code  Gb  stm8s_flash.o [1]
+FLASH_ReadByte          0x00fdd3     0x5  Code  Gb  stm8s_flash.o [1]
+FLASH_SetProgrammingTime
+                        0x00fd71     0xb  Code  Gb  stm8s_flash.o [1]
+FLASH_Unlock            0x00fb41    0x16  Code  Gb  stm8s_flash.o [1]
+FLASH_WaitForLastOperation
+                        0x00f2a8    0x36  Code  Gb  stm8s_flash.o [1]
+GB2312_16_GetData       0x010a4e   0x251  Code  Gb  GT20L16P1Y.o [3]
+GPIO_Init               0x01490d    0xaf  Code  Gb  stm8s_gpio.o [1]
+GPIO_ReadInputPin       0x00fd7c     0x9  Code  Gb  stm8s_gpio.o [1]
+GPIO_WriteHigh          0x00fdbc     0x7  Code  Gb  stm8s_gpio.o [1]
+GPIO_WriteLow           0x00fe22     0x4  Code  Gb  stm8s_gpio.o [1]
+GeHuTest                0x01667b     0x1  Code  Lc  ApiKeyboard.o [1]
+GetIPPORT               0x0165ae    0x45  Code  Gb  ApiGpsCmd.o [1]
+GetMemberCount          0x001607     0x1  Data  Gb  ApiPocCmd.o [1]
+GetNoOnlineMembersCount
+                        0x001632     0x1  Data  Gb  Delay.o [1]
+GetPersonalCallingMode  0x00fd66     0xb  Code  Gb  ApiPocCmd.o [1]
+GetPointArrayData32     0x0164d7    0x48  Code  Gb  GT20L16P1Y_D.o [1]
+GetTaskId               0x00fe36     0x4  Code  Gb  System.o [1]
+Get_0X_ActiveUserIDBuf  0x00158e     0xb  Data  Gb  ApiPocCmd.o [1]
+Get_GBK_ActiveUserID    0x015a85    0x62  Code  Gb  ApiPocCmd.o [1]
+Get_Unicode_ActiveUserID
+                        0x015322    0x85  Code  Gb  ApiPocCmd.o [1]
+Get_Unicode_ActiveUserIDBuf
+                        0x0014d2    0x2d  Data  Gb  ApiPocCmd.o [1]
+GettheOnlineMembersDone
+                        0x00161e     0x1  Data  Gb  ApiPocCmd.o [1]
+GpsCmd_GbAnalytical     0x010c9f   0x24d  Code  Lc  ApiGpsCmd.o [1]
+GpsCmd_GbDataTransave   0x00e7ad   0x341  Code  Lc  ApiGpsCmd.o [1]
+GpsCmd_GbWritCommand    0x00dee2   0x2fa  Code  Lc  ApiGpsCmd.o [1]
+GpsFunDrvObj            0x0010de   0x1c3  Data  Lc  ApiGpsCmd.o [1]
+GpsNotify_Queue         0x00d3c4    0x7d  Code  Lc  DrvGD83.o [1]
+GpsNotify_Queue_Start   0x00d1d2    0x9a  Code  Lc  DrvGD83.o [1]
+GpsReconnectionTimeCount
+                        0x001626     0x1  Data  Gb  Delay.o [1]
+GroupCallingNum         0x00168f     0x1  Data  Gb  ApiKeyboard.o [1]
+HDRCSQSignalIcons       0x014bae    0x9c  Code  Gb  ApiAtCmd.o [1]
+HDRCSQValue             0x0015d3     0x1  Data  Gb  ApiAtCmd.o [1]
+HSE_ClockStartUpConfiguration
+                        0x00f2de    0x36  Code  Lc  sysclock.o [1]
+HSIDivFactor            0x00ad2a     0x4  Data  Gb  stm8s_clk.o [1]
+HexToChar_AllOnlineMemberNum
+                        0x00f68f    0x29  Code  Gb  ApiPocCmd.o [1]
+HtgDrvObj               0x0015c3     0x2  Data  Lc  DrvHTG12832.o [1]
+I2C_IRQHandler          0x00fe5f     0x1  Code  Gb  stm8s_it.o [1]
+INTVEC$$Base            0x008000           --   Gb  - Linker created -
+INTVEC$$Limit           0x008080           --   Gb  - Linker created -
+ITC_SetSoftwarePriority
+                        0x013c7a   0x103  Code  Gb  stm8s_itc.o [1]
+Ico_DataBuf             0x009b80   0x400  Data  Gb  ApiDisplay.o [1]
+InputGBcode             0x009f80   0x1b0  Data  Gb  GT20L16P1Y_D.o [1]
+InputUnicode            0x00a130   0x1b0  Data  Gb  GT20L16P1Y_D.o [1]
+InvalidCallCount        0x00160a     0x1  Data  Gb  ApiPocCmd.o [1]
+KCMD_GetMcuVersion      0x015c0a    0x61  Code  Lc  KeyCmd.o [1]
+KCMD_KeyCmdGet          0x00f97a    0x20  Code  Gb  KeyCmd.o [1]
+KEY_4Count              0x00163a     0x1  Data  Gb  Delay.o [1]
+KEY_4_Flag              0x00164e     0x1  Data  Gb  Task.o [1]
+KEY_TABLE               0x00ad3c     0x3  Data  Lc  uart3.o [1]
+Key3Option              0x001644     0x1  Data  Gb  Task.o [1]
+Key3_PlayValue          0x0015dc     0x1  Data  Gb  ApiGpsCmd.o [1]
+Key3_PlayVoice          0x013073   0x149  Code  Gb  Task.o [1]
+KeyBatteryReport        0x015ccc    0x5f  Code  Gb  ADC.o [1]
+KeyDownUpChoose_GroupOrUser_Flag
+                        0x0015d2     0x1  Data  Gb  ApiAtCmd.o [1]
+KeyPersonalCallingCount
+                        0x0015e3     0x1  Data  Gb  ApiKeyboard.o [1]
+KeyPttState             0x00161c     0x1  Data  Gb  ApiPocCmd.o [1]
+KeyUpDownCount          0x0015e2     0x1  Data  Gb  ApiKeyboard.o [1]
+Key_Flag_1              0x0015e4     0x1  Data  Gb  ApiKeyboard.o [1]
+Key_Init                0x00f34a    0x34  Code  Gb  McuConfig.o [1]
+Key_PersonalCalling_Flag
+                        0x001647     0x1  Data  Gb  Task.o [1]
+Keyboard_Test           0x00ad42   0xfba  Code  Gb  ApiKeyboard.o [1]
+KeylockTimeCount        0x0015c1     0x2  Data  Gb  Delay.o [1]
+KeylockTimeSetCount     0x001692     0x1  Data  Gb  ApiKeyboard.o [1]
+LED_Conut               0x0015f8     0x1  Data  Gb  ApiLED.o [1]
+LED_Init                0x00f7a8    0x27  Code  Gb  McuConfig.o [1]
+LED_IntOutputRenew      0x014ea6    0x95  Code  Gb  ApiLED.o [1]
+LandingTimeCount        0x001628     0x1  Data  Gb  Delay.o [1]
+Level3MenuDisplay       0x01234c   0x1a9  Code  Gb  ApiMenu.o [1]
+LobatteryTask_StartCount
+                        0x001631     0x1  Data  Gb  Delay.o [1]
+LobatteryTask_StartFlag
+                        0x0015cc     0x1  Data  Gb  ADC.o [1]
+LockingState_EnterOK_Flag
+                        0x0015e8     0x1  Data  Gb  ApiKeyboard.o [1]
+LockingState_Flag       0x001638     0x1  Data  Gb  Delay.o [1]
+LoosenPttMomentCount    0x00164b     0x1  Data  Gb  Task.o [1]
+LoosenPttMoment_Flag    0x00164d     0x1  Data  Gb  Task.o [1]
+LowVoltageDetection     0x010574   0x288  Code  Gb  ADC.o [1]
+LowVoltageDetection_Flag
+                        0x0015cb     0x1  Data  Gb  ADC.o [1]
+MCU_VERSIONForMenu      0x00fc8a     0xe  Code  Gb  KeyCmd.o [1]
+MIC_GPIO_Init           0x00fca6     0xd  Code  Gb  McuConfig.o [1]
+MIC_IOMUT               0x00fa9a    0x19  Code  Gb  McuConfig.o [1]
+Mcu_Version             0x00a512    0x20  Data  Lc  KeyCmd.o [1]
+MenuDisplay             0x00e3d8   0x3d5  Code  Gb  ApiMenu.o [1]
+MenuModeCount           0x001690     0x1  Data  Gb  ApiKeyboard.o [1]
+MenuMode_Flag           0x0015e5     0x1  Data  Gb  ApiKeyboard.o [1]
+NetworkType_2Gor3G_Flag
+                        0x0016a6     0x1  Data  Gb  Task.o [1]
+NoUseNum                0x001645     0x1  Data  Gb  Task.o [1]
+Noise_Mute_Init         0x00fcc0     0xd  Code  Gb  McuConfig.o [1]
+Notify_Queue_Stop       0x00d26c   0x158  Code  Lc  DrvGD83.o [1]
+NumberKeyboardPressDown_flag
+                        0x0015e7     0x1  Data  Gb  ApiKeyboard.o [1]
+OffLineCount            0x00161b     0x1  Data  Gb  ApiPocCmd.o [1]
+OneChannelGetADValue    0x00f75a    0x27  Code  Lc  ADC.o [1]
+PAS_NULLTBL             0x00aa54    0x10  Data  Lc  uart3.o [1]
+POC_AtEnterPersonalCalling_Flag
+                        0x00160e     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_AtQuitPersonalCalling_Flag
+                        0x00160f     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_EnterGroupCalling_Flag
+                        0x001610     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_EnterPersonalCalling_Flag
+                        0x00160c     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_GetAllGroupNameDone_Flag
+                        0x00160b     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_QuitGroupCalling_Flag
+                        0x001611     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_QuitPersonalCalling_Flag
+                        0x00160d     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_Receive86_Flag      0x00161a     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_ReceivedVoiceCount  0x001630     0x1  Data  Gb  Delay.o [1]
+POC_ReceivedVoiceEndForXTSF_Flag
+                        0x001619     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_ReceivedVoiceEnd_Flag
+                        0x001618     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_ReceivedVoiceStart_Flag
+                        0x001617     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_ReceivedVoice_Flag  0x001612     0x1  Data  Gb  ApiPocCmd.o [1]
+POC_TABLE               0x00ad3f     0x3  Data  Lc  uart3.o [1]
+PasObj                  0x0015b5     0x4  Data  Lc  uart3.o [1]
+PersonCallIco_Flag      0x001646     0x1  Data  Gb  Task.o [1]
+PersonalCallingNum      0x0015e1     0x1  Data  Gb  ApiKeyboard.o [1]
+PocCmdDrvobj            0x000010   0x99f  Data  Lc  ApiPocCmd.o [1]
+PocNoOnlineMember_Flag  0x00161d     0x1  Data  Gb  ApiPocCmd.o [1]
+PocNotify_Queue         0x00d036    0x4d  Code  Lc  DrvGD83.o [1]
+PocNotify_Queue_Start   0x00d126    0x56  Code  Lc  DrvGD83.o [1]
+PositionInfoSendToATPORT_InfoDisplay_Flag
+                        0x0015d8     0x1  Data  Gb  ApiAtCmd.o [1]
+PositionInfoSendToATPORT_RedLed_Flag
+                        0x0015d6     0x1  Data  Gb  ApiAtCmd.o [1]
+PositionInfoSendToATPORT_SetPPP_Flag
+                        0x0015d7     0x1  Data  Gb  ApiAtCmd.o [1]
+PositionInformationSendToATPORT_Flag
+                        0x0015d5     0x1  Data  Gb  ApiAtCmd.o [1]
+PresentGroupNum         0x001609     0x1  Data  Gb  ApiPocCmd.o [1]
+PrimaryLowPowerCount    0x001629     0x1  Data  Gb  Delay.o [1]
+PrimaryLowPower_Flag    0x0015cd     0x1  Data  Gb  ADC.o [1]
+READ_TABLE              0x00ad2e     0x4  Data  Lc  uart3.o [1]
+ReadBuffer              0x001333    0x50  Data  Gb  ApiPocCmd.o [1]
+ReadBufferA             0x00163e     0x1  Data  Gb  Delay.o [1]
+ReadBufferB             0x00163f     0x1  Data  Gb  Delay.o [1]
+ReadByte                0x015f4e    0x57  Code  Gb  ApiDisplay.o [1]
+Region$$Table$$Base     0x00a4f6           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00a512           --   Gb  - Linker created -
+ReportTimerRead         0x0015da     0x1  Data  Gb  ApiGpsCmd.o [1]
+ReportTimerSET          0x0015db     0x1  Data  Gb  ApiGpsCmd.o [1]
+RxStartFlag             0x0015a4     0x6  Data  Gb  ApiBeidou.o [1]
+SPI_IRQHandler          0x00fe59     0x1  Code  Gb  stm8s_it.o [1]
+SSWLCount               0x001642     0x1  Data  Gb  Task.o [1]
+SendByte                0x01529a    0x88  Code  Gb  ApiDisplay.o [1]
+SendGpsLoginInfoCount   0x0015df     0x1  Data  Gb  ApiGpsCmd.o [1]
+SetTaskId               0x00fe3a     0x4  Code  Gb  System.o [1]
+Set_GreenLed            0x00fa68    0x19  Code  Gb  McuConfig.o [1]
+Set_RedLed              0x00fa81    0x19  Code  Gb  McuConfig.o [1]
+Set_TIM1_PWM1_DutyCycle
+                        0x015062     0x9  Code  Gb  Tone.o [1]
+Set_TIM1_PWM_Frequency  0x00fd97     0x9  Code  Gb  Tone.o [1]
+ShowTimeCount           0x001634     0x1  Data  Gb  Delay.o [1]
+ShowTime_Flag           0x001620     0x1  Data  Gb  Delay.o [1]
+SignalPoorCount         0x0015bb     0x2  Data  Gb  Delay.o [1]
+StartingUpStep          0x001643     0x1  Data  Gb  Task.o [1]
+SubmenuMenuDisplay      0x013304   0x145  Code  Gb  ApiMenu.o [1]
+SwitchGroupBUG          0x001615     0x1  Data  Gb  ApiPocCmd.o [1]
+SystemClock_Init        0x00f63a    0x2b  Code  Gb  sysclock.o [1]
+TASK_Ptt_StartPersonCalling_Flag
+                        0x001648     0x1  Data  Gb  Task.o [1]
+TASK_RunLoBattery       0x00f99a    0x20  Code  Gb  Task.o [1]
+TASK_WriteFreq          0x00fe3e     0x4  Code  Gb  Task.o [1]
+TIM1_ARRPreloadConfig   0x00fd01     0xd  Code  Gb  stm8s_tim1.o [1]
+TIM1_CAP_COM_IRQHandler
+                        0x00fe5a     0x1  Code  Gb  stm8s_it.o [1]
+TIM1_CCxCmd             0x016638    0x43  Code  Gb  stm8s_tim1.o [1]
+TIM1_ClearITPendingBit  0x00fdd8     0x5  Code  Gb  stm8s_tim1.o [1]
+TIM1_Cmd                0x00fce7     0xd  Code  Gb  stm8s_tim1.o [1]
+TIM1_CtrlPWMOutputs     0x00fcf4     0xd  Code  Gb  stm8s_tim1.o [1]
+TIM1_DeInit             0x014c4a    0x99  Code  Gb  stm8s_tim1.o [1]
+TIM1_ITConfig           0x00fbe0    0x13  Code  Gb  stm8s_tim1.o [1]
+TIM1_OC1Init            0x015c6b    0x61  Code  Gb  stm8s_tim1.o [1]
+TIM1_OC1PreloadConfig   0x00fd0e     0xd  Code  Gb  stm8s_tim1.o [1]
+TIM1_PWM_Init           0x01574d    0x6d  Code  Gb  Tone.o [1]
+TIM1_SetCounter         0x00fd85     0x9  Code  Gb  stm8s_tim1.o [1]
+TIM1_TimeBaseInit       0x00f8b0    0x24  Code  Gb  stm8s_tim1.o [1]
+TIM1_UPD_OVF_TRG_BRK_IRQHandler
+                        0x015fa5    0x56  Code  Gb  stm8s_it.o [1]
+TIM2_CAP_COM_IRQHandler
+                        0x00fe5c     0x1  Code  Gb  stm8s_it.o [1]
+TIM2_UPD_OVF_BRK_IRQHandler
+                        0x00fe5b     0x1  Code  Gb  stm8s_it.o [1]
+TIM3_ARRPreloadConfig   0x00fd28     0xd  Code  Gb  stm8s_tim3.o [1]
+TIM3_CAP_COM_IRQHandler
+                        0x00fe5d     0x1  Code  Gb  stm8s_it.o [1]
+TIM3_ClearITPendingBit  0x00fddd     0x5  Code  Gb  stm8s_tim3.o [1]
+TIM3_Cmd                0x00fd1b     0xd  Code  Gb  stm8s_tim3.o [1]
+TIM3_ITConfig           0x00fbf3    0x13  Code  Gb  stm8s_tim3.o [1]
+TIM3_PrescalerConfig    0x00fd8e     0x9  Code  Gb  stm8s_tim3.o [1]
+TIM3_TimeBaseInit       0x00fd4f     0xc  Code  Gb  stm8s_tim3.o [1]
+TIM3_UPD_OVF_BRK_IRQHandler
+                        0x00f959    0x21  Code  Gb  stm8s_it.o [1]
+TIM4_UPD_OVF_IRQHandler
+                        0x00fe62     0x1  Code  Gb  stm8s_it.o [1]
+TLI_IRQHandler          0x00fe51     0x1  Code  Gb  stm8s_it.o [1]
+TONE_PowerOnInitial     0x0157ba    0x6b  Code  Gb  Tone.o [1]
+TONE_Start              0x00f7fe    0x1d  Code  Gb  Tone.o [1]
+TONE_Stop               0x00f7f5     0x9  Code  Gb  Tone.o [1]
+TRAP_IRQHandler         0x00fe50     0x1  Code  Gb  stm8s_it.o [1]
+TaskDrvObj              0x001547    0x14  Data  Lc  System.o [1]
+TaskStartDeleteDelay1   0x00164f     0x1  Data  Gb  Task.o [1]
+TaskStartDeleteDelay1Count
+                        0x00162c     0x1  Data  Gb  Delay.o [1]
+TaskStartDeleteDelay2   0x001650     0x1  Data  Gb  Task.o [1]
+TaskStartDeleteDelay3   0x001651     0x1  Data  Gb  Task.o [1]
+TaskStartDeleteDelay3Count
+                        0x00162d     0x1  Data  Gb  Delay.o [1]
+TaskStartDeleteDelay4   0x0016a7     0x1  Data  Gb  Task.o [1]
+TaskStartDeleteDelay4Count
+                        0x00162e     0x1  Data  Gb  Delay.o [1]
+TaskStartDeleteDelay5   0x001652     0x1  Data  Gb  Task.o [1]
+TaskStartDeleteDelay6   0x001653     0x1  Data  Gb  Task.o [1]
+TaskStartDeleteDelay6Count
+                        0x00162f     0x1  Data  Gb  Delay.o [1]
+Task_Landing_Flag       0x001649     0x1  Data  Gb  Task.o [1]
+Task_RunNormalOperation
+                        0x00d80c   0x6d6  Code  Gb  Task.o [1]
+Task_RunStart           0x010eec   0x248  Code  Gb  Task.o [1]
+TcpIpBuf                0x00157f     0xf  Data  Gb  ApiGpsCmd.o [1]
+TcpPortBuf              0x0015b0     0x5  Data  Gb  ApiGpsCmd.o [1]
+Test1                   0x0015de     0x1  Data  Gb  ApiGpsCmd.o [1]
+TestNum1                0x0015ea     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum10               0x0015f0     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum11               0x0015f1     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum12               0x0015f2     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum2                0x0015eb     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum4                0x0015ec     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum5                0x0015ed     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum8                0x0015ee     0x1  Data  Gb  ApiKeyboard.o [1]
+TestNum9                0x0015ef     0x1  Data  Gb  ApiKeyboard.o [1]
+Test_PWM_LED            0x01506b    0x86  Code  Gb  Tone.o [1]
+TheMenuLayer_Flag       0x0015e6     0x1  Data  Gb  ApiKeyboard.o [1]
+Tim3_Timer_Init         0x00f6e1    0x29  Code  Gb  McuConfig.o [1]
+TimeCount               0x0015bd     0x2  Data  Gb  Delay.o [1]
+TimeCount2              0x001623     0x1  Data  Gb  Delay.o [1]
+TimeCount3              0x0015bf     0x2  Data  Gb  Delay.o [1]
+TimeCount_Light         0x001624     0x1  Data  Gb  Delay.o [1]
+ToneDrvObj              0x00156d    0x12  Data  Lc  Tone.o [1]
+ToneTimeCount           0x001625     0x1  Data  Gb  Delay.o [1]
+UART1_ClearITPendingBit
+                        0x00fc5e     0xf  Code  Gb  stm8s_uart1.o [1]
+UART1_Cmd               0x00fd35     0xd  Code  Gb  stm8s_uart1.o [1]
+UART1_DeInit            0x00f5e1    0x2d  Code  Gb  stm8s_uart1.o [1]
+UART1_GetFlagStatus     0x00f3b2    0x32  Code  Gb  stm8s_uart1.o [1]
+UART1_GetITStatus       0x014fd0    0x92  Code  Gb  stm8s_uart1.o [1]
+UART1_ITConfig          0x0156e0    0x6d  Code  Gb  stm8s_uart1.o [1]
+UART1_Init              0x012dc7   0x159  Code  Gb  stm8s_uart1.o [1]
+UART1_RX_IRQHandler     0x00f5b4    0x2d  Code  Gb  stm8s_it.o [1]
+UART1_ReceiveData8      0x00fe26     0x4  Code  Gb  stm8s_uart1.o [1]
+UART1_SendData8         0x00fe2a     0x4  Code  Gb  stm8s_uart1.o [1]
+UART1_TX_IRQHandler     0x00fe5e     0x1  Code  Gb  stm8s_it.o [1]
+UART3_Cmd               0x00fd42     0xd  Code  Gb  stm8s_uart3.o [1]
+UART3_DeInit            0x00f866    0x25  Code  Gb  stm8s_uart3.o [1]
+UART3_GetFlagStatus     0x016446    0x49  Code  Gb  stm8s_uart3.o [1]
+UART3_GetITStatus       0x0146f5    0xb6  Code  Gb  stm8s_uart3.o [1]
+UART3_ITConfig          0x01520d    0x8d  Code  Gb  stm8s_uart3.o [1]
+UART3_Init              0x01392b   0x12a  Code  Gb  stm8s_uart3.o [1]
+UART3_Interrupt         0x01463b    0xba  Code  Gb  uart3.o [1]
+UART3_RX_IRQHandler     0x00fa4d    0x1b  Code  Gb  stm8s_it.o [1]
+UART3_ReceiveData8      0x00fe2e     0x4  Code  Gb  stm8s_uart3.o [1]
+UART3_SendByte          0x00fc4e    0x10  Code  Gb  uart3.o [1]
+UART3_SendData8         0x00fe32     0x4  Code  Gb  stm8s_uart3.o [1]
+UART3_TX_IRQHandler     0x00fe60     0x1  Code  Gb  stm8s_it.o [1]
+UART3_ToMcuMain         0x015825    0x69  Code  Gb  uart3.o [1]
+UART_Delay              0x00fc2a    0x12  Code  Lc  uart3.o [1]
+UART_ErrorAck           0x01621d    0x16  Code  Lc  uart3.o [1]
+UART_GetCheckSum        0x014f3b    0x2e  Code  Lc  uart3.o [1]
+UART_KeyCommand         0x0150f1    0x8f  Code  Lc  uart3.o [1]
+UART_Link               0x014f69    0x67  Code  Lc  uart3.o [1]
+UART_PasCommand         0x011fee   0x1b2  Code  Lc  uart3.o [1]
+UART_PocCommand         0x015e42    0x5c  Code  Lc  uart3.o [1]
+UART_ReadCommand        0x014055    0xe9  Code  Lc  uart3.o [1]
+UART_RightAck           0x015672    0x6e  Code  Lc  uart3.o [1]
+UART_RxFrame            0x0160a4    0x52  Code  Lc  uart3.o [1]
+UART_TxSend             0x0161e4    0x39  Code  Lc  uart3.o [1]
+UART_WriteCommand       0x013e77    0xf3  Code  Lc  uart3.o [1]
+UNICODE_16_GetData      0x01280e   0x185  Code  Gb  GT20L16P1Y.o [3]
+Uart1_Init              0x00f18e    0x3b  Code  Gb  McuConfig.o [1]
+Uart3_Init              0x00f1c9    0x39  Code  Gb  uart3.o [1]
+UartDrvObj              0x0013ce    0x44  Data  Lc  uart3.o [1]
+UnicodeForGbk_AllGrounpName
+                        0x012685   0x189  Code  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_AllGrounpNameBuf
+                        0x0014ff    0x19  Data  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_AllUserName
+                        0x0115a0   0x227  Code  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_AllUserNameBuf
+                        0x001452    0x40  Data  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_AllUserName_english_flag
+                        0x00fba7    0x13  Code  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_MainUserName
+                        0x011be9   0x206  Code  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_MainUserNameBuf
+                        0x001518    0x19  Data  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_MainUserName_english_flag
+                        0x00fe1e     0x4  Code  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_MainWorkName
+                        0x012993   0x173  Code  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_SpeakerRightnowName
+                        0x0117c7   0x211  Code  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_SpeakerRightnowNameBuf
+                        0x001492    0x40  Data  Gb  ApiPocCmd.o [1]
+UnicodeForGbk_SpeakerRightnowName_english_flag
+                        0x00fe1a     0x4  Code  Gb  ApiPocCmd.o [1]
+UnicodeGetPointArrayData32
+                        0x01651f    0x48  Code  Gb  GT20L16P1Y_D.o [1]
+UnicodeValueSearch      0x00f7cf    0x26  Code  Gb  GT20L16P1Y_D.o [1]
+UpDownSwitchingCount    0x00162b     0x1  Data  Gb  Delay.o [1]
+UpDownSwitching_Flag    0x0015f3     0x1  Data  Gb  ApiKeyboard.o [1]
+VOICE_1sProcess         0x00fc6d     0xf  Code  Gb  Voice.o [1]
+VOICE_Renew             0x015601    0x71  Code  Gb  Voice.o [1]
+VOICE_SetOutput         0x016233    0x4f  Code  Gb  Voice.o [1]
+ValueSearch             0x015de6    0x5c  Code  Gb  GT20L16P1Y_D.o [1]
+VerifyData              0x008080  0x1b00  Data  Gb  GT20L16P1Y_D.o [1]
+VoiceAllOnlineMemberNum
+                        0x00f665    0x2a  Code  Gb  ApiPocCmd.o [1]
+VoiceDrvObj             0x0015aa     0x6  Data  Lc  Voice.o [1]
+VoiceType_FreehandOrHandset_Flag
+                        0x0015e9     0x1  Data  Gb  ApiKeyboard.o [1]
+WRITE_TABLE             0x00ad32     0x4  Data  Lc  uart3.o [1]
+WW_GetData              0x010000   0x2cd  Code  Gb  GT20L16P1Y.o [3]
+WriteEEPROMByte         0x00f113    0x3e  Code  Gb  Flash_eeprom.o [1]
+WriteFreqTimeCount      0x00161f     0x1  Data  Gb  Delay.o [1]
+WriteFreq_Flag          0x001657     0x1  Data  Gb  uart3.o [1]
+__DebugBreak            0x00fe64     0x1  Code  Gb  __dbg_break.o [4]
+__exit                  0x00fb57    0x16  Code  Gb  __dbg_xxexit.o [4]
+__iar_copy_init2        0x00f732          Code  Gb  init_small.o [5]
+__iar_data_init2        0x00f9d9    0x1e  Code  Gb  init.o [5]
+__iar_program_start     0x00fb13          Code  Gb  cstartup.o [5]
+__iar_unhandled_exception
+                        0x00fe4d          Code  Gb  unhandled_exception.o [5]
+__iar_zero_init2        0x00f9f7          Code  Gb  init_small.o [5]
+__intvec                0x008000          Data  Gb  interrupt.o [5]
+__low_level_init        0x00fe4a     0x3  Code  Gb  low_level_init.o [5]
+_exit                   0x00fdc3          Code  Gb  cexit.o [5]
+_interrupt_1            0x00fe50          Code  Gb  stm8s_it.o [1]
+_interrupt_12           0x00fe59          Code  Gb  stm8s_it.o [1]
+_interrupt_13           0x015fa5          Code  Gb  stm8s_it.o [1]
+_interrupt_14           0x00fe5a          Code  Gb  stm8s_it.o [1]
+_interrupt_15           0x00fe5b          Code  Gb  stm8s_it.o [1]
+_interrupt_16           0x00fe5c          Code  Gb  stm8s_it.o [1]
+_interrupt_17           0x00f959          Code  Gb  stm8s_it.o [1]
+_interrupt_18           0x00fe5d          Code  Gb  stm8s_it.o [1]
+_interrupt_19           0x00fe5e          Code  Gb  stm8s_it.o [1]
+_interrupt_2            0x00fe51          Code  Gb  stm8s_it.o [1]
+_interrupt_20           0x00f5b4          Code  Gb  stm8s_it.o [1]
+_interrupt_21           0x00fe5f          Code  Gb  stm8s_it.o [1]
+_interrupt_22           0x00fe60          Code  Gb  stm8s_it.o [1]
+_interrupt_23           0x00fa4d          Code  Gb  stm8s_it.o [1]
+_interrupt_24           0x00fe61          Code  Gb  stm8s_it.o [1]
+_interrupt_25           0x00fe62          Code  Gb  stm8s_it.o [1]
+_interrupt_26           0x00fe63          Code  Gb  stm8s_it.o [1]
+_interrupt_3            0x00fe52          Code  Gb  stm8s_it.o [1]
+_interrupt_4            0x00fe53          Code  Gb  stm8s_it.o [1]
+_interrupt_5            0x00fe54          Code  Gb  stm8s_it.o [1]
+_interrupt_6            0x00fe55          Code  Gb  stm8s_it.o [1]
+_interrupt_7            0x00fe56          Code  Gb  stm8s_it.o [1]
+_interrupt_8            0x00fe57          Code  Gb  stm8s_it.o [1]
+_interrupt_9            0x00fe58          Code  Gb  stm8s_it.o [1]
+allow_key_operation_flag
+                        0x00163d     0x1  Data  Gb  Delay.o [1]
+api_diap_ico_pos_get    0x015ba9    0x61  Code  Gb  ApiDisplay.o [1]
+api_disp_all_screen_refresh
+                        0x016146    0x4f  Code  Gb  ApiDisplay.o [1]
+api_disp_char_output    0x00fae5    0x17  Code  Gb  ApiDisplay.o [1]
+api_disp_char_output2   0x00fafc    0x17  Code  Gb  ApiDisplay.o [1]
+api_disp_ico_output     0x01485d    0xb0  Code  Gb  ApiDisplay.o [1]
+api_disp_icoid_output   0x014ce3    0x97  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint     0x00f4a1    0x2e  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint2    0x00f414    0x2f  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint3    0x00f587    0x2d  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint4    0x00f4cf    0x2e  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint5    0x00f4fd    0x2e  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint7    0x00f52b    0x2e  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint8    0x00f443    0x2f  Code  Gb  ApiDisplay.o [1]
+api_lcd_pwr_on_hint9    0x00f559    0x2e  Code  Gb  ApiDisplay.o [1]
+api_poc_command_get     0x0149bc    0xad  Code  Lc  uart3.o [1]
+api_poc_command_set     0x014223    0xdf  Code  Lc  uart3.o [1]
+csq_value_for_display   0x015ae7    0x61  Code  Gb  ApiAtCmd.o [1]
+drv_gt20_data_output    0x0137f7   0x134  Code  Gb  DrvGT20L16S1Y.o [1]
+drv_gt20_data_output2   0x013588   0x13b  Code  Gb  DrvGT20L16S1Y.o [1]
+drv_gt20_pwr_on_init    0x00f26e     0x4  Code  Gb  DrvGT20L16S1Y.o [1]
+drv_htg_clr_allscr      0x010935    0x35  Code  Gb  DrvHTG12832.o [1]
+drv_htg_pwr_on_init     0x010a42     0xc  Code  Gb  DrvHTG12832.o [1]
+drv_htg_reset           0x0107fc     0x5  Code  Gb  DrvHTG12832.o [1]
+drv_htg_set_address     0x01087b    0x40  Code  Gb  DrvHTG12832.o [1]
+drv_htg_write_command   0x010801    0x7a  Code  Gb  DrvHTG12832.o [1]
+drv_htg_write_data      0x0108bb    0x7a  Code  Gb  DrvHTG12832.o [1]
+drv_keypad_scan         0x0119d8   0x211  Code  Gb  DrvKeyboard.o [1]
+exit                    0x00fe46     0x4  Code  Gb  exit.o [5]
+find_zf_tab             0x016567    0x47  Code  Gb  GT20L16P1Y.o [3]
+get_group_list_loss_flag
+                        0x001606     0x1  Data  Gb  ApiPocCmd.o [1]
+get_group_list_loss_flag_count
+                        0x00163c     0x1  Data  Gb  Delay.o [1]
+get_group_name_done_count
+                        0x00163b     0x1  Data  Gb  Delay.o [1]
+get_key_value           0x01413e    0xe5  Code  Gb  ApiKeyboard.o [1]
+get_online_user_list_num_flag
+                        0x0015f4     0x1  Data  Gb  ApiKeyboard.o [1]
+get_online_user_list_num_for_key_flag
+                        0x0015f5     0x1  Data  Gb  ApiKeyboard.o [1]
+group_num_count         0x001605     0x1  Data  Gb  ApiPocCmd.o [1]
+htg_delay_ms            0x01096a    0x1e  Code  Lc  DrvHTG12832.o [1]
+htg_initial             0x010988    0x6c  Code  Lc  DrvHTG12832.o [1]
+huo_qu_zhong_flag       0x0015f6     0x1  Data  Gb  ApiKeyboard.o [1]
+huo_qu_zhong_flag_count
+                        0x001635     0x1  Data  Gb  Delay.o [1]
+j                       0x001656     0x1  Data  Gb  Tone.o [1]
+key_scan_board          0x013449   0x13f  Code  Gb  DrvKeyboard.o [1]
+key_top_value           0x0015dd     0x1  Data  Gb  ApiGpsCmd.o [1]
+key_warning_bubiao_flag
+                        0x001655     0x1  Data  Gb  Task.o [1]
+key_warning_bubiao_flag_count
+                        0x001637     0x1  Data  Gb  Delay.o [1]
+key_warning_flag        0x001654     0x1  Data  Gb  Task.o [1]
+key_warning_flag_count  0x001636     0x1  Data  Gb  Delay.o [1]
+main                    0x00f781    0x27  Code  Gb  main.o [1]
+main_app                0x0162d0    0x4e  Code  Gb  System.o [1]
+main_init               0x013b6f   0x10b  Code  Gb  System.o [1]
+mcu_gt20_initial        0x00f23a    0x34  Code  Lc  DrvGT20L16S1Y.o [1]
+mcu_key_pad_out         0x014e10    0x96  Code  Gb  DrvKeyboard.o [1]
+mcu_key_pad_read        0x01558f    0x72  Code  Gb  DrvKeyboard.o [1]
+mcu_key_pad_set         0x0131bc   0x148  Code  Gb  DrvKeyboard.o [1]
+mcu_lcd_initial         0x0109f4    0x4e  Code  Lc  DrvHTG12832.o [1]
+memcmp                  0x00f314    0x36  Code  Gb  memcmp.o [5]
+memcpy                  0x00f81b    0x26  Code  Gb  memcpy.o [5]
+memset                  0x00fb2a    0x17  Code  Gb  memset.o [5]
+network_mode_2gor3g_SetCount
+                        0x001697     0x1  Data  Gb  ApiMenu.o [1]
+pack_data               0x012b06   0x165  Code  Lc  ApiGpsCmd.o [1]
+r_dat_bat               0x0158f5    0x64  Code  Gb  ApiDisplay.o [1]
+refresh_users_list_count
+                        0x001603     0x1  Data  Gb  ApiPocCmd.o [1]
+refresh_users_list_count_max
+                        0x001604     0x1  Data  Gb  ApiPocCmd.o [1]
+sou_xing_count_for_display
+                        0x015b48    0x61  Code  Gb  ApiAtCmd.o [1]
+strlen                  0x00fc3c    0x12  Code  Gb  strlen.o [5]
+tone_count              0x001641     0x1  Data  Gb  stm8s_it.o [1]
+ucAtPocHead             0x001698     0x2  Data  Gb  ApiPocCmd.o [1]
+ucCDMATIME              0x001678     0x2  Data  Gb  ApiAtCmd.o [1]
+ucCLVL                  0x0016ac     0x2  Data  Gb  Task.o [1]
+ucCODECCTL              0x0016b0     0x2  Data  Gb  Task.o [1]
+ucCSQ                   0x0016b6     0x2  Data  Gb  Task.o [1]
+ucCaretPPPCFG           0x001682     0x2  Data  Gb  ApiAtCmd.o [1]
+ucCheckCard             0x001686     0x2  Data  Gb  ApiAtCmd.o [1]
+ucCheckPPP              0x00165c     0x2  Data  Gb  ApiAtCmd.o [1]
+ucCheckRssi             0x00166e     0x2  Data  Gb  ApiAtCmd.o [1]
+ucCheckTcp              0x001658     0x2  Data  Gb  ApiAtCmd.o [1]
+ucEndPTT                0x0016aa     0x2  Data  Gb  Task.o [1]
+ucGD83Reset             0x001668     0x2  Data  Gb  ApiAtCmd.o [1]
+ucGPSCNO                0x00167c     0x2  Data  Gb  ApiAtCmd.o [1]
+ucGPSINFO               0x00167a     0x2  Data  Gb  ApiAtCmd.o [1]
+ucGPSUploadTime_5s      0x00169c     0x2  Data  Gb  Delay.o [1]
+ucGpsPosition           0x001676     0x2  Data  Gb  ApiAtCmd.o [1]
+ucHDRCSQ                0x001670     0x2  Data  Gb  ApiAtCmd.o [1]
+ucNetworkMode2          0x001693     0x2  Data  Gb  ApiMenu.o [1]
+ucNetworkMode3          0x001695     0x2  Data  Gb  ApiMenu.o [1]
+ucOSSYSHWID             0x0016b2     0x2  Data  Gb  Task.o [1]
+ucPPPCFG                0x0016b8     0x2  Data  Gb  Task.o [1]
+ucPlayZtts              0x001684     0x2  Data  Gb  ApiAtCmd.o [1]
+ucPocOpenConfig         0x0016bc     0x2  Data  Gb  Task.o [1]
+ucPrefmode4             0x0016b4     0x2  Data  Gb  Task.o [1]
+ucQuitPersonalCalling   0x00168d     0x2  Data  Gb  ApiKeyboard.o [1]
+ucRxCSQ                 0x001672     0x2  Data  Gb  ApiAtCmd.o [1]
+ucRxCheckPppClose       0x001660     0x2  Data  Gb  ApiAtCmd.o [1]
+ucRxCheckPppOpen        0x00165e     0x2  Data  Gb  ApiAtCmd.o [1]
+ucRxCheckTcp            0x001666     0x2  Data  Gb  ApiAtCmd.o [1]
+ucRxHDRCSQ              0x001674     0x2  Data  Gb  ApiAtCmd.o [1]
+ucRxOkHeadInfo          0x0016a2     0x2  Data  Gb  DrvGD83.o [1]
+ucRxPASTATE1            0x00166a     0x2  Data  Gb  ApiAtCmd.o [1]
+ucRxPocHeadInfo         0x0016a0     0x2  Data  Gb  DrvGD83.o [1]
+ucRxTcpDataHeadInfo     0x0016a4     0x2  Data  Gb  DrvGD83.o [1]
+ucRxZTTS0               0x00166c     0x2  Data  Gb  ApiAtCmd.o [1]
+ucSIMST1                0x00167e     0x2  Data  Gb  ApiAtCmd.o [1]
+ucSIMST255              0x001680     0x2  Data  Gb  ApiAtCmd.o [1]
+ucSendTcp               0x001664     0x2  Data  Gb  ApiAtCmd.o [1]
+ucSetIPAndID            0x00169a     0x2  Data  Gb  ApiPocCmd.o [1]
+ucSetIp                 0x001662     0x2  Data  Gb  ApiAtCmd.o [1]
+ucStartPTT              0x0016a8     0x2  Data  Gb  Task.o [1]
+ucTxPocHeadInfo         0x00169e     0x2  Data  Gb  DrvGD83.o [1]
+ucVGR                   0x0016ae     0x2  Data  Gb  Task.o [1]
+ucVGR1                  0x001689     0x2  Data  Gb  ApiKeyboard.o [1]
+ucVGR7                  0x00168b     0x2  Data  Gb  ApiKeyboard.o [1]
+ucZTTS_Abell            0x0016ba     0x2  Data  Gb  Task.o [1]
+ucZpppOpen              0x00165a     0x2  Data  Gb  ApiAtCmd.o [1]
+xinhao_test_flag        0x0015f7     0x1  Data  Gb  ApiKeyboard.o [1]
+
+
+[1] = E:\1-source\A508_TCP版本\PRJ\Debug\Obj
+[2] = command line
+[3] = GT20L16_STM8_DOUBLE_MEDIUM_IAR.a
+[4] = dbgstm8mmd.a
+[5] = dlstm8mmn.a
+
+  47 007 bytes of readonly  code memory
+  11 586 bytes of readonly  data memory
+   6 078 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
